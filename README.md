@@ -20,7 +20,17 @@
 
 [![Retain the base models' original generative and editing capabilities. Unlock long-horizon preservation that rivals—or even surpasses—GPT-Image-2.5 Sunburst.](website/assets/readme/slogan.svg)](https://lyricccco.github.io/tailsteer/)
 
-[Models](#choose-your-backbone) · [Try it](#try-tailsteer) · [Training data](https://huggingface.co/datasets/Lyricccco/TailSteer-Source) · [Add & Preserve](https://huggingface.co/datasets/Lyricccco/Add-and-Preserve) · [Reproduce](#from-source-images-to-your-own-tailsteer-model)
+**Try the released TailSteer models**
+
+[![FLUX.2 [klein] Base 9B · TailSteer](https://img.shields.io/badge/FLUX.2_%5Bklein%5D_Base_9B-TailSteer-692568?logo=huggingface&logoColor=FFD21E&labelColor=26323F)](https://huggingface.co/Lyricccco/FLUX.2-klein-base-9B-TailSteer)
+[![SenseNova-U1.5-8B-MoT · TailSteer](https://img.shields.io/badge/SenseNova--U1.5--8B--MoT-TailSteer-692568?logo=huggingface&logoColor=FFD21E&labelColor=26323F)](https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT-TailSteer)
+[![Qwen-Image-2.1 · TailSteer](https://img.shields.io/badge/Qwen--Image--2.1-TailSteer-692568?logo=huggingface&logoColor=FFD21E&labelColor=26323F)](https://huggingface.co/Lyricccco/Qwen-Image-2.1-TailSteer)
+
+[![arXiv · 2611.06741](https://img.shields.io/badge/arXiv-2611.06741-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2611.06741v1)
+[![Hugging Face dataset · Source data](https://img.shields.io/badge/Dataset-Source_data-345D91?logo=huggingface&logoColor=FFD21E&labelColor=26323F)](https://huggingface.co/datasets/Lyricccco/TailSteer-Source)
+[![Hugging Face dataset · Add & Preserve Bench](https://img.shields.io/badge/Dataset-Add_%26_Preserve_Bench-345D91?logo=huggingface&logoColor=FFD21E&labelColor=26323F)](https://huggingface.co/datasets/Lyricccco/Add-and-Preserve)
+
+[Models](#choose-your-backbone) · [Try it](#try-tailsteer) · [Reproduce](#from-source-images-to-your-own-tailsteer-model)
 
 </div>
 
@@ -161,9 +171,10 @@ The public implementation has been checked against the research code for cache t
 
 ## Resources
 
+- [Paper on arXiv](https://arxiv.org/abs/2611.06741v1)
 - [Model collection](https://huggingface.co/collections/Lyricccco/tailsteer)
 - [Project page: visual results and interactive comparisons](https://lyricccco.github.io/tailsteer/)
-- [TailSteer-Source](https://huggingface.co/datasets/Lyricccco/TailSteer-Source) · [Add & Preserve](https://huggingface.co/datasets/Lyricccco/Add-and-Preserve)
+- [Source data: TailSteer-Source](https://huggingface.co/datasets/Lyricccco/TailSteer-Source) · [Add & Preserve Bench](https://huggingface.co/datasets/Lyricccco/Add-and-Preserve)
 - [Dataset formats](docs/dataset-formats.md) · [Original pipeline examples](docs/model-cards)
 
 The project page lives in [`website/`](website/README.md). README figures and model cards reuse its shared `website/assets/` files. Pushes to `main` validate and deploy the site with GitHub Pages.
