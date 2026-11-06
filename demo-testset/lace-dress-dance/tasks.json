@@ -1,0 +1,151 @@
+{
+  "tasks": [
+    {
+      "chain_rounds": true,
+      "id": "02-lace-dress-dance",
+      "image": "inputs/02-lace-dress-dance.png",
+      "rounds": [
+        {
+          "condition_images": [
+            "inputs/round-01.png"
+          ],
+          "primary_source": "task.image",
+          "prompt": "Edit image 1 into the next animation frame. Image 2 is only a skeleton and outline layout specifying the absolute target pose. Repose the existing subject to match it, replacing the previous limb positions rather than adding limbs. Keep the same head facing direction. Do not copy any lines, joints, white guide background or mannequin into the output. Spread BOTH existing arms sideways at shoulder height, matching the skeleton. Keep the torso and head in their original orientation. Preserve the same face and head direction, hairstyle, white lace sleeves and gown, waist belt, room, window, curtains, lace-covered table, ornaments, lighting and camera. Change only the two existing arms, natural sleeve folds, shadows and newly revealed background. Keep the torso and lower body still. Do not add arms, hands, skeleton lines, panels or motion trails.",
+          "reference_roles": [
+            {
+              "image_index": 2,
+              "role": "geometry_only"
+            }
+          ],
+          "seed": 886743977
+        },
+        {
+          "condition_images": [
+            "inputs/round-02.png"
+          ],
+          "primary_source": "round_1.output",
+          "prompt": "Edit image 1 into the next animation frame. Image 2 is only a skeleton and outline layout specifying the absolute target pose. Repose the existing subject to match it, replacing the previous limb positions rather than adding limbs. Keep the same head facing direction. Do not copy any lines, joints, white guide background or mannequin into the output. Lift BOTH arms diagonally upward into a clear V beside the head, with both hands well above the shoulders. Match the guide without lengthening the arms. Preserve the same face and head direction, hairstyle, white lace sleeves and gown, waist belt, room, window, curtains, lace-covered table, ornaments, lighting and camera. Change only the two existing arms, natural sleeve folds, shadows and newly revealed background. Keep the torso and lower body still. Do not add arms, hands, skeleton lines, panels or motion trails.",
+          "reference_roles": [
+            {
+              "image_index": 2,
+              "role": "geometry_only"
+            }
+          ],
+          "seed": 886743977
+        },
+        {
+          "condition_images": [
+            "inputs/round-03.png"
+          ],
+          "primary_source": "round_2.output",
+          "prompt": "Edit image 1 into the next animation frame. Image 2 is only a skeleton and outline layout specifying the absolute target pose. Repose the existing subject to match it, replacing the previous limb positions rather than adding limbs. Keep the same head facing direction. Do not copy any lines, joints, white guide background or mannequin into the output. Lower BOTH arms naturally beside the white skirt, matching the lowered hands in the guide. Preserve the same face and head direction, hairstyle, white lace sleeves and gown, waist belt, room, window, curtains, lace-covered table, ornaments, lighting and camera. Change only the two existing arms, natural sleeve folds, shadows and newly revealed background. Keep the torso and lower body still. Do not add arms, hands, skeleton lines, panels or motion trails.",
+          "reference_roles": [
+            {
+              "image_index": 2,
+              "role": "geometry_only"
+            }
+          ],
+          "seed": 886743977
+        },
+        {
+          "condition_images": [
+            "inputs/round-04.png"
+          ],
+          "primary_source": "round_3.output",
+          "prompt": "Edit image 1 into the next animation frame. Image 2 is only a skeleton and outline layout specifying the absolute target pose. Repose the existing subject to match it, replacing the previous limb positions rather than adding limbs. Keep the same head facing direction. Do not copy any lines, joints, white guide background or mannequin into the output. Raise only the arm on the LEFT side of the image diagonally upward beside the head; keep the other arm lowered. Preserve the same face and head direction, hairstyle, white lace sleeves and gown, waist belt, room, window, curtains, lace-covered table, ornaments, lighting and camera. Change only the two existing arms, natural sleeve folds, shadows and newly revealed background. Keep the torso and lower body still. Do not add arms, hands, skeleton lines, panels or motion trails.",
+          "reference_roles": [
+            {
+              "image_index": 2,
+              "role": "geometry_only"
+            }
+          ],
+          "seed": 886743977
+        },
+        {
+          "condition_images": [
+            "inputs/round-05.png"
+          ],
+          "primary_source": "round_4.output",
+          "prompt": "Edit image 1 into the next animation frame. Image 2 is only a skeleton and outline layout specifying the absolute target pose. Repose the existing subject to match it, replacing the previous limb positions rather than adding limbs. Keep the same head facing direction. Do not copy any lines, joints, white guide background or mannequin into the output. Exchange sides: lower that arm and raise only the arm on the RIGHT side of the image diagonally upward beside the head. Preserve the same face and head direction, hairstyle, white lace sleeves and gown, waist belt, room, window, curtains, lace-covered table, ornaments, lighting and camera. Change only the two existing arms, natural sleeve folds, shadows and newly revealed background. Keep the torso and lower body still. Do not add arms, hands, skeleton lines, panels or motion trails.",
+          "reference_roles": [
+            {
+              "image_index": 2,
+              "role": "geometry_only"
+            }
+          ],
+          "seed": 886743977
+        },
+        {
+          "condition_images": [
+            "inputs/round-06.png"
+          ],
+          "primary_source": "round_5.output",
+          "prompt": "Edit image 1 into the next animation frame. Image 2 is only a skeleton and outline layout specifying the absolute target pose. Repose the existing subject to match it, replacing the previous limb positions rather than adding limbs. Keep the same head facing direction. Do not copy any lines, joints, white guide background or mannequin into the output. Bring BOTH arms into a broad sideways spread at shoulder height, matching the guide. Preserve the same face and head direction, hairstyle, white lace sleeves and gown, waist belt, room, window, curtains, lace-covered table, ornaments, lighting and camera. Change only the two existing arms, natural sleeve folds, shadows and newly revealed background. Keep the torso and lower body still. Do not add arms, hands, skeleton lines, panels or motion trails.",
+          "reference_roles": [
+            {
+              "image_index": 2,
+              "role": "geometry_only"
+            }
+          ],
+          "seed": 886743977
+        },
+        {
+          "condition_images": [
+            "inputs/round-07.png"
+          ],
+          "primary_source": "round_6.output",
+          "prompt": "Edit image 1 into the next animation frame. Image 2 is only a skeleton and outline layout specifying the absolute target pose. Repose the existing subject to match it, replacing the previous limb positions rather than adding limbs. Keep the same head facing direction. Do not copy any lines, joints, white guide background or mannequin into the output. Lift BOTH arms diagonally upward into the same V pose beside the head. Preserve the same face and head direction, hairstyle, white lace sleeves and gown, waist belt, room, window, curtains, lace-covered table, ornaments, lighting and camera. Change only the two existing arms, natural sleeve folds, shadows and newly revealed background. Keep the torso and lower body still. Do not add arms, hands, skeleton lines, panels or motion trails.",
+          "reference_roles": [
+            {
+              "image_index": 2,
+              "role": "geometry_only"
+            }
+          ],
+          "seed": 886743977
+        },
+        {
+          "condition_images": [
+            "inputs/round-08.png"
+          ],
+          "primary_source": "round_7.output",
+          "prompt": "Edit image 1 into the next animation frame. Image 2 is only a skeleton and outline layout specifying the absolute target pose. Repose the existing subject to match it, replacing the previous limb positions rather than adding limbs. Keep the same head facing direction. Do not copy any lines, joints, white guide background or mannequin into the output. Lower both arms outward into a horizontal spread at shoulder height. Preserve the same face and head direction, hairstyle, white lace sleeves and gown, waist belt, room, window, curtains, lace-covered table, ornaments, lighting and camera. Change only the two existing arms, natural sleeve folds, shadows and newly revealed background. Keep the torso and lower body still. Do not add arms, hands, skeleton lines, panels or motion trails.",
+          "reference_roles": [
+            {
+              "image_index": 2,
+              "role": "geometry_only"
+            }
+          ],
+          "seed": 886743977
+        },
+        {
+          "condition_images": [
+            "inputs/round-09.png"
+          ],
+          "primary_source": "round_8.output",
+          "prompt": "Edit image 1 into the next animation frame. Image 2 is only a skeleton and outline layout specifying the absolute target pose. Repose the existing subject to match it, replacing the previous limb positions rather than adding limbs. Keep the same head facing direction. Do not copy any lines, joints, white guide background or mannequin into the output. Raise BOTH arms diagonally upward once more, matching the earlier V pose without increasing the reach. Preserve the same face and head direction, hairstyle, white lace sleeves and gown, waist belt, room, window, curtains, lace-covered table, ornaments, lighting and camera. Change only the two existing arms, natural sleeve folds, shadows and newly revealed background. Keep the torso and lower body still. Do not add arms, hands, skeleton lines, panels or motion trails.",
+          "reference_roles": [
+            {
+              "image_index": 2,
+              "role": "geometry_only"
+            }
+          ],
+          "seed": 886743977
+        },
+        {
+          "condition_images": [
+            "inputs/round-10.png"
+          ],
+          "primary_source": "round_9.output",
+          "prompt": "Edit image 1 into the next animation frame. Image 2 is only a skeleton and outline layout specifying the absolute target pose. Repose the existing subject to match it, replacing the previous limb positions rather than adding limbs. Keep the same head facing direction. Do not copy any lines, joints, white guide background or mannequin into the output. Finish with BOTH arms lowered naturally beside the white skirt. Keep the torso and lower body still. Preserve the same face and head direction, hairstyle, white lace sleeves and gown, waist belt, room, window, curtains, lace-covered table, ornaments, lighting and camera. Change only the two existing arms, natural sleeve folds, shadows and newly revealed background. Keep the torso and lower body still. Do not add arms, hands, skeleton lines, panels or motion trails.",
+          "reference_roles": [
+            {
+              "image_index": 2,
+              "role": "geometry_only"
+            }
+          ],
+          "seed": 886743977
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+torch==2.8.0
+torchvision==0.23.0
+diffusers @ git+https://github.com/huggingface/diffusers.git@1d5d056ecff3a8c1d887a7dd1aa66ca4a0323458
+transformers==5.17.0
+accelerate==1.15.0
+sentencepiece==0.2.2
+einops==0.8.2
+opencv-python-headless
+scipy

@@ -1,0 +1,68 @@
+seed: 42
+model:
+  name: qwen_image_21
+  path: ${TAILSTEER_MODEL_ROOT}/Qwen-Image-2.1
+  code_path: ${TAILSTEER_ROOT}/upstream/Qwen-Image-2.1
+  diffusers_revision: 1d5d056ecff3a8c1d887a7dd1aa66ca4a0323458
+  dtype: bfloat16
+  true_cfg_scale: 1
+  use_kv_cache: true
+data:
+  caches:
+  - path: ${TAILSTEER_CACHE_ROOT}/qwen-image-2.1
+    task: mixed
+    tasks:
+    - local_edit
+    - noop
+    mask_variant: dilate5
+  split_seed: 42
+  validation_fraction: 0.05
+training:
+  trainable:
+    policy: denoiser_full
+    master_dtype: model
+    conditioning_gradients: false
+  batch_size: 1
+  gradient_accumulation_steps: 2
+  learning_rate: 1.0e-06
+  weight_decay: 0.01
+  max_grad_norm: 1
+  max_epochs: null
+  num_workers: 0
+  validation_batches: 100
+  checkpoint_io:
+    cpu_offload: false
+    writer_threads: 1
+    per_thread_copy_ahead_bytes: 10000000
+  gradient_checkpointing: true
+  export_inference: true
+  visual_validation:
+    enabled: false
+  steering_onset: 30
+  last_denoising_step: 39
+  blending_schedule: odds
+  odds_ratio: 1.0
+  timestep_sampling:
+    strategy: sigma_beta
+    rho: 0.8
+    beta: 3
+  preservation_endpoint: source_keep_terminal_edit
+  final_step_loss_weight: 0.1
+  max_updates: 2000
+  warmup_updates: 100
+  lr_decay_updates: 10000
+  checkpoint_every_updates: 1000
+  validate_every_updates: 1000
+  log_every_updates: 10
+distributed:
+  mode: fsdp2
+  timeout_seconds: 3600
+  fsdp2:
+    param_dtype: bfloat16
+    reduce_dtype: float32
+    output_dtype: bfloat16
+    cast_forward_inputs: false
+    reshard_after_forward: true
+run:
+  output_dir: ${TAILSTEER_RUN_ROOT}/qwen-image-2.1
+  resume: null

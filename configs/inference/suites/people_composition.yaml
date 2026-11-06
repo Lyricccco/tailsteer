@@ -1,0 +1,36 @@
+schema_version: 1
+name: people-composition
+num_steps: 50
+seed: 42
+tasks: ${TAILSTEER_ROOT}/demo-testset/people-composition/tasks.json
+image_root: ${TAILSTEER_ROOT}/demo-testset/people-composition
+policies:
+- base
+- tailsteer
+backends:
+  flux2:
+    inference:
+      feedback:
+        mode: image
+      decode_intermediate: true
+      decode_after_chain: none
+      multi_condition:
+        max_static_references: 3
+  sensenova:
+    inference:
+      feedback:
+        mode: image
+      multi_condition:
+        max_static_references: 3
+  qwen21:
+    num_steps: 40
+    inference:
+      feedback:
+        mode: image
+      multi_condition:
+        max_static_references: 3
+  kontext:
+    num_steps: 30
+    inference:
+      feedback:
+        mode: image

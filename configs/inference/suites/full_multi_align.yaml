@@ -1,0 +1,33 @@
+schema_version: 1
+name: full-multi-align
+num_steps: 50
+seed: 42
+tasks: ${TAILSTEER_DATA_ROOT}/full-multi-align/tasks.json
+image_root: ${TAILSTEER_DATA_ROOT}/full-multi-align
+policies:
+- base
+- tailsteer
+backends:
+  flux2:
+    inference:
+      feedback:
+        mode: image
+      decode_intermediate: true
+      decode_after_chain: none
+  sensenova:
+    inference:
+      feedback:
+        mode: image
+  qwen21:
+    num_steps: 40
+    schedule:
+      shift_policy: native
+    inference:
+      feedback:
+        mode: image
+      save_round_images: true
+  kontext:
+    num_steps: 30
+    inference:
+      feedback:
+        mode: image

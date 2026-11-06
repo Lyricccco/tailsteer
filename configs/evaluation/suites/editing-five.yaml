@@ -1,0 +1,4 @@
+kind: evaluation
+benchmarks: [gedit, rise, imgedit-basic, mse, edival]
+policies: [base, tailsteer]
+feedback: image

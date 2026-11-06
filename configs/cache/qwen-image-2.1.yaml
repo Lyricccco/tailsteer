@@ -1,0 +1,69 @@
+model:
+  name: qwen_image_21
+  path: ${TAILSTEER_MODEL_ROOT}/Qwen-Image-2.1
+  code_path: ${TAILSTEER_ROOT}/upstream/Qwen-Image-2.1
+  diffusers_revision: 1d5d056ecff3a8c1d887a7dd1aa66ca4a0323458
+  dtype: bfloat16
+  true_cfg_scale: 1
+  use_kv_cache: true
+  state_representation: qwen21_normalized_vae_latent
+data:
+  manifest: ${TAILSTEER_DATA_ROOT}/training/sources.jsonl
+  image_root: ${TAILSTEER_DATA_ROOT}/training
+  fields:
+    source: source
+    prompt: prompt
+    seed: seed
+cache:
+  recipe: annotated-mixed
+  completion_mode: candidates_exhausted
+  storage_layout: trajectory_grouped_v2
+  mask_variants:
+  - fine
+  - dilate5
+  output_dir: ${TAILSTEER_CACHE_ROOT}/qwen-image-2.1
+  width: 1024
+  height: 1024
+  num_steps: 40
+  forward_points:
+  - 0
+  - 3
+  - 6
+  - 9
+  - 12
+  - 15
+  - 18
+  - 21
+  - 24
+  - 27
+  - 30
+  - 31
+  - 32
+  - 33
+  - 34
+  - 35
+  - 36
+  - 37
+  - 38
+  - 39
+  final_point: 40
+  candidate_start: 0
+  candidate_end: auto
+  seed: 0
+  noop_prompt: Keep the image exactly unchanged.
+  filter:
+    enabled: true
+    reference_mode: none
+    component_policy: all
+    min_noop_ssim: 0.82
+    max_noop_rgb_mae: 0.065
+    max_changed_ratio: 0.1
+    change_threshold: 0.22
+    min_ssim: 0.72
+    min_raw_edit_ratio: 0.002
+    max_raw_edit_ratio: 0.2
+    min_component_dominance: 0.65
+    max_bounding_box_ratio: 0.35
+    min_patch_side: 16
+    patch_multiple: 8
+    dilation_pixels: 48

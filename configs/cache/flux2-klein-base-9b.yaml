@@ -1,0 +1,74 @@
+model:
+  name: flux2_klein_9b
+  path: ${TAILSTEER_MODEL_ROOT}/FLUX.2-klein-base-9B
+  code_path: ${TAILSTEER_ROOT}/upstream/diffusers
+  dtype: bfloat16
+  cfg_scale: 4.0
+  cfg_training: guided
+  negative_prompt: ''
+  state_representation: flux2_unpacked_vae_latent
+data:
+  manifest: ${TAILSTEER_DATA_ROOT}/training/sources.jsonl
+  image_root: ${TAILSTEER_DATA_ROOT}/training
+  fields:
+    source: source
+    prompt: prompt
+    seed: seed
+cache:
+  recipe: annotated-mixed
+  completion_mode: candidates_exhausted
+  storage_layout: trajectory_grouped_v2
+  mask_variants:
+  - fine
+  - dilate5
+  output_dir: ${TAILSTEER_CACHE_ROOT}/flux2-klein-base-9b
+  width: 1024
+  height: 1024
+  num_steps: 50
+  forward_points:
+  - 0
+  - 3
+  - 6
+  - 9
+  - 12
+  - 15
+  - 18
+  - 21
+  - 24
+  - 27
+  - 30
+  - 33
+  - 36
+  - 39
+  - 40
+  - 41
+  - 42
+  - 43
+  - 44
+  - 45
+  - 46
+  - 47
+  - 48
+  - 49
+  final_point: 50
+  candidate_start: 0
+  candidate_end: auto
+  seed: 0
+  noise_mode: pure_noise
+  noop_prompt: Keep the image exactly unchanged.
+  filter:
+    enabled: true
+    reference_mode: none
+    component_policy: all
+    min_noop_ssim: 0.82
+    max_noop_rgb_mae: 0.065
+    max_changed_ratio: 0.1
+    change_threshold: 0.22
+    min_ssim: 0.72
+    min_raw_edit_ratio: 0.002
+    max_raw_edit_ratio: 0.2
+    min_component_dominance: 0.65
+    max_bounding_box_ratio: 0.35
+    min_patch_side: 16
+    patch_multiple: 8
+    dilation_pixels: 48

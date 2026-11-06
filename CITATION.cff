@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "Please cite the TailSteer paper when using this code."
+title: "TailSteer: Trajectory-Tail Steering for Drift-Resistant Multi-turn Image Editing"
+type: software
+version: 0.1.0
+license: Apache-2.0
+authors:
+  - given-names: Ruikang
+    family-names: Li
+  - given-names: Zixuan
+    family-names: Chen
+  - given-names: Jiarui
+    family-names: Wu
+  - given-names: Mingde
+    family-names: Yao
+  - given-names: Yiyuan
+    family-names: Zhang
+  - given-names: Yujin
+    family-names: Wang
+  - given-names: Hanming
+    family-names: Deng
+  - given-names: Lewei
+    family-names: Lu
+  - given-names: Tianfan
+    family-names: Xue

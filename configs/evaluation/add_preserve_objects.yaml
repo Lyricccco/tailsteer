@@ -1,0 +1,8 @@
+enabled: true
+model: gpt-6.1-sol
+expected_model: null
+reasoning_effort: medium
+max_completion_tokens: 4096
+workers: 4
+scoring_passes: 3
+timeout: 150

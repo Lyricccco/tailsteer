@@ -1,0 +1,91 @@
+{
+  "tasks": [
+    {
+      "chain_rounds": true,
+      "id": "0001-01",
+      "image": "inputs/0001-01.png",
+      "rounds": [
+        {
+          "prompt": "Refill the cup with a latte featuring a simple leaf-shaped foam design. Keep all other details and prior edits unchanged.",
+          "seed": 42
+        },
+        {
+          "prompt": "Give the cup's exterior fine vertical ceramic fluting. Keep all other details and prior edits unchanged.",
+          "seed": 43
+        },
+        {
+          "prompt": "Place a crescent-shaped butter cookie on the saucer beside the handle. Keep all other details and prior edits unchanged.",
+          "seed": 44
+        },
+        {
+          "prompt": "Fill the tall glass halfway with sparkling water and visible small bubbles. Keep all other details and prior edits unchanged.",
+          "seed": 45
+        },
+        {
+          "prompt": "Rest a thin lemon wheel on the glass rim. Keep all other details and prior edits unchanged.",
+          "seed": 46
+        },
+        {
+          "prompt": "Lay a narrow woven bookmark along the book's inner margin, beside the pen. Keep all other details and prior edits unchanged.",
+          "seed": 47
+        },
+        {
+          "prompt": "Add a small tassel to the bookmark's lower end, resting on the table. Keep all other details and prior edits unchanged.",
+          "seed": 48
+        },
+        {
+          "prompt": "Turn the existing pen into a brushed-metal fountain pen of the same size and position. Keep all other details and prior edits unchanged.",
+          "seed": 49
+        },
+        {
+          "prompt": "Place its detached cap across the lower blank margin of the right page. Keep all other details and prior edits unchanged.",
+          "seed": 50
+        },
+        {
+          "prompt": "Slightly raise the viewing angle, keeping the currently visible book area, cup, and glass in frame. Keep all other details and prior edits unchanged.",
+          "seed": 51
+        },
+        {
+          "prompt": "Set a small clear vase holding one chamomile stem behind the book, left of the glass. Keep all other details and prior edits unchanged.",
+          "seed": 52
+        },
+        {
+          "prompt": "Place a round cork coaster beneath the water glass. Keep all other details and prior edits unchanged.",
+          "seed": 53
+        },
+        {
+          "prompt": "Add a tiny embossed open-book symbol to the cup's outer wall. Keep all other details and prior edits unchanged.",
+          "seed": 54
+        },
+        {
+          "prompt": "Fold the upper-right corner of the book's right page into a small dog-ear. Keep all other details and prior edits unchanged.",
+          "seed": 55
+        },
+        {
+          "prompt": "Place a pair of round reading glasses on the tabletop left of the book. Keep all other details and prior edits unchanged.",
+          "seed": 56
+        },
+        {
+          "prompt": "Cast soft window-frame shadows across the empty rear tabletop, clear of the book text. Keep all other details and prior edits unchanged.",
+          "seed": 57
+        },
+        {
+          "prompt": "Give the cookie one small bite-shaped notch along its outer curve. Keep all other details and prior edits unchanged.",
+          "seed": 58
+        },
+        {
+          "prompt": "Place three cookie crumbs on the saucer beside that notch. Keep all other details and prior edits unchanged.",
+          "seed": 59
+        },
+        {
+          "prompt": "Slightly extend the canvas leftward with matching tabletop and natural wood grain. Keep all other details and prior edits unchanged.",
+          "seed": 60
+        },
+        {
+          "prompt": "Stand a small folded cream card behind the vase with the word 'Reserved' clearly printed. Retain the leaf latte, fluted cup, woven bookmark, and cork coaster. Keep all other details and prior edits unchanged.",
+          "seed": 61
+        }
+      ]
+    }
+  ]
+}

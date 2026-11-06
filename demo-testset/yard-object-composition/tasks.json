@@ -1,0 +1,140 @@
+{
+  "tasks": [
+    {
+      "chain_rounds": true,
+      "id": "02-yard-outdoor-kit",
+      "image": "inputs/trailer-yard.png",
+      "rounds": [
+        {
+          "condition_images": [
+            "inputs/red-bicycle.png",
+            "inputs/deck-chair.png",
+            "inputs/camping-stove.png",
+            "inputs/lantern.png"
+          ],
+          "primary_source": "task.image",
+          "prompt": "Edit image 1 as the existing scene; it is not an identity reference to replace. Arrange an outdoor equipment display on the empty paved foreground in front of the cabin. Keep the cabin, windows, sky, evening lighting and camera unchanged. Use separated compact placements; do not add people or unrequested furniture. Add exactly 4 new subjects from images 2 through 5. From image 2, add exactly one red bicycle with its attached front basket: standing side-on at the left, center near 14% width, wheels at 78% height, about 23% image width. From image 3, add exactly one wooden folding deck chair: on the pavement near 41% width and 77% height, about 19% image height. From image 4, add exactly one compact camping stove: on the pavement near 61% width and 77% height, about 11% image height; no spreading fire. From image 5, add exactly one ornate freestanding outdoor lantern: upright near 77% width and 75% height, about 13% image height.  Preserve their identity, appearance, size and positions, and preserve the original scene, camera and framing. Transfer only the specified subject from each reference, not its background or any text labels. Do not add duplicate copies or extra subjects. Allow only necessary local occlusion, natural lighting and contact shadows around the new additions. Leave room for later additions; do not rearrange existing subjects. The scene should now retain 4 inserted reference subjects in total, in addition to any original scene contents.",
+          "reference_roles": [
+            {
+              "asset_id": "red-bicycle",
+              "image_index": 2,
+              "role": "subject_identity"
+            },
+            {
+              "asset_id": "deck-chair",
+              "image_index": 3,
+              "role": "subject_identity"
+            },
+            {
+              "asset_id": "camping-stove",
+              "image_index": 4,
+              "role": "subject_identity"
+            },
+            {
+              "asset_id": "lantern",
+              "image_index": 5,
+              "role": "subject_identity"
+            }
+          ],
+          "seed": 1459997593
+        },
+        {
+          "condition_images": [
+            "inputs/watering-can.png",
+            "inputs/bucket.png",
+            "inputs/helmet.png"
+          ],
+          "primary_source": "round_1.output",
+          "prompt": "Edit image 1 as the existing scene; it is not an identity reference to replace. Arrange an outdoor equipment display on the empty paved foreground in front of the cabin. Keep the cabin, windows, sky, evening lighting and camera unchanged. Use separated compact placements; do not add people or unrequested furniture. Add exactly 3 new subjects from images 2 through 4. From image 2, add exactly one pale green watering can: on the pavement near 13% width and 88% height, about 9% image height. From image 3, add exactly one dark green bucket with its handle: on the pavement near 29% width and 87% height, about 10% image height. From image 4, add exactly one metal costume helmet with its two horns: resting on the pavement near 48% width and 88% height, about 10% image width. Keep all previously inserted subjects unchanged: red bicycle with its attached front basket; wooden folding deck chair; compact camping stove; ornate freestanding outdoor lantern. Preserve their identity, appearance, size and positions, and preserve the original scene, camera and framing. Transfer only the specified subject from each reference, not its background or any text labels. Do not add duplicate copies or extra subjects. Allow only necessary local occlusion, natural lighting and contact shadows around the new additions. Leave room for later additions; do not rearrange existing subjects. The scene should now retain 7 inserted reference subjects in total, in addition to any original scene contents.",
+          "reference_roles": [
+            {
+              "asset_id": "watering-can",
+              "image_index": 2,
+              "role": "subject_identity"
+            },
+            {
+              "asset_id": "bucket",
+              "image_index": 3,
+              "role": "subject_identity"
+            },
+            {
+              "asset_id": "helmet",
+              "image_index": 4,
+              "role": "subject_identity"
+            }
+          ],
+          "seed": 1459997593
+        },
+        {
+          "condition_images": [
+            "inputs/garden-trowel.png",
+            "inputs/handbag.png",
+            "inputs/electric-scooter.png"
+          ],
+          "primary_source": "round_2.output",
+          "prompt": "Edit image 1 as the existing scene; it is not an identity reference to replace. Arrange an outdoor equipment display on the empty paved foreground in front of the cabin. Keep the cabin, windows, sky, evening lighting and camera unchanged. Use separated compact placements; do not add people or unrequested furniture. Add exactly 3 new subjects from images 2 through 4. From image 2, add exactly one metal garden trowel with its wooden handle: lying flat near 12% width and 97% height, about 11% image width; transfer only the trowel. From image 3, add exactly one black and orange handbag: on the pavement near 66% width and 90% height, about 11% image width. From image 4, add exactly one black electric kick scooter: standing near the far-right pavement, center at 91% width, wheels at 87% height, about 18% image width. Keep all previously inserted subjects unchanged: red bicycle with its attached front basket; wooden folding deck chair; compact camping stove; ornate freestanding outdoor lantern; pale green watering can; dark green bucket with its handle; metal costume helmet with its two horns. Preserve their identity, appearance, size and positions, and preserve the original scene, camera and framing. Transfer only the specified subject from each reference, not its background or any text labels. Do not add duplicate copies or extra subjects. Allow only necessary local occlusion, natural lighting and contact shadows around the new additions. Leave room for later additions; do not rearrange existing subjects. The scene should now retain 10 inserted reference subjects in total, in addition to any original scene contents.",
+          "reference_roles": [
+            {
+              "asset_id": "garden-trowel",
+              "image_index": 2,
+              "role": "subject_identity"
+            },
+            {
+              "asset_id": "handbag",
+              "image_index": 3,
+              "role": "subject_identity"
+            },
+            {
+              "asset_id": "electric-scooter",
+              "image_index": 4,
+              "role": "subject_identity"
+            }
+          ],
+          "seed": 1459997593
+        },
+        {
+          "condition_images": [
+            "inputs/water.png",
+            "inputs/hat.png"
+          ],
+          "primary_source": "round_3.output",
+          "prompt": "Edit image 1 as the existing scene; it is not an identity reference to replace. Arrange an outdoor equipment display on the empty paved foreground in front of the cabin. Keep the cabin, windows, sky, evening lighting and camera unchanged. Use separated compact placements; do not add people or unrequested furniture. Add exactly 2 new subjects from images 2 through 3. From image 2, add exactly one bottled water with its blue label: upright near 32% width and 97% height, about 7% image height. From image 3, add exactly one purple wide-brimmed hat: resting on the pavement near 48% width and 97% height, about 11% image width. Keep all previously inserted subjects unchanged: red bicycle with its attached front basket; wooden folding deck chair; compact camping stove; ornate freestanding outdoor lantern; pale green watering can; dark green bucket with its handle; metal costume helmet with its two horns; metal garden trowel with its wooden handle; black and orange handbag; black electric kick scooter. Preserve their identity, appearance, size and positions, and preserve the original scene, camera and framing. Transfer only the specified subject from each reference, not its background or any text labels. Do not add duplicate copies or extra subjects. Allow only necessary local occlusion, natural lighting and contact shadows around the new additions. Leave room for later additions; do not rearrange existing subjects. The scene should now retain 12 inserted reference subjects in total, in addition to any original scene contents.",
+          "reference_roles": [
+            {
+              "asset_id": "water",
+              "image_index": 2,
+              "role": "subject_identity"
+            },
+            {
+              "asset_id": "hat",
+              "image_index": 3,
+              "role": "subject_identity"
+            }
+          ],
+          "seed": 1459997593
+        },
+        {
+          "condition_images": [
+            "inputs/orange-half.png",
+            "inputs/bowl.png"
+          ],
+          "primary_source": "round_4.output",
+          "prompt": "Edit image 1 as the existing scene; it is not an identity reference to replace. Arrange an outdoor equipment display on the empty paved foreground in front of the cabin. Keep the cabin, windows, sky, evening lighting and camera unchanged. Use separated compact placements; do not add people or unrequested furniture. Add exactly 2 new subjects from images 2 through 3. From image 2, add exactly one orange half with its cut face visible: on the pavement near 82% width and 97% height, about 5% image width. From image 3, add exactly one dark bronze-colored bowl: on the pavement near 68% width and 97% height, about 8% image width. Keep all previously inserted subjects unchanged: red bicycle with its attached front basket; wooden folding deck chair; compact camping stove; ornate freestanding outdoor lantern; pale green watering can; dark green bucket with its handle; metal costume helmet with its two horns; metal garden trowel with its wooden handle; black and orange handbag; black electric kick scooter; bottled water with its blue label; purple wide-brimmed hat. Preserve their identity, appearance, size and positions, and preserve the original scene, camera and framing. Transfer only the specified subject from each reference, not its background or any text labels. Do not add duplicate copies or extra subjects. Allow only necessary local occlusion, natural lighting and contact shadows around the new additions. Leave room for later additions; do not rearrange existing subjects. The scene should now retain 14 inserted reference subjects in total, in addition to any original scene contents.",
+          "reference_roles": [
+            {
+              "asset_id": "orange-half",
+              "image_index": 2,
+              "role": "subject_identity"
+            },
+            {
+              "asset_id": "bowl",
+              "image_index": 3,
+              "role": "subject_identity"
+            }
+          ],
+          "seed": 1459997593
+        }
+      ]
+    }
+  ]
+}

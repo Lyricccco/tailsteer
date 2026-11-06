@@ -1,0 +1,13 @@
+flux:
+  repo: https://github.com/black-forest-labs/flux.git
+  revision: 802fb4713906133fcbd0d8dc5351620ca4773036
+diffusers:
+  repo: https://github.com/huggingface/diffusers.git
+  revision: 2f7e0154a9db246e95c9ede43edba7db5b130805
+qwen-image-2.1:
+  repo: https://github.com/QwenLM/Qwen-Image-2.1.git
+  revision: fb7ae1d1f9611cd91524d03c53c5246b36ac8577
+  diffusers_revision: 1d5d056ecff3a8c1d887a7dd1aa66ca4a0323458
+sensenova:
+  repo: https://github.com/OpenSenseNova/SenseNova-U1.git
+  revision: f71dfb098226d01edc0e4c67b3917a2af71a30ef

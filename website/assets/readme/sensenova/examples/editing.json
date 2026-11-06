@@ -1,0 +1,275 @@
+{
+  "single": {
+    "id": "sensenova-0037-37",
+    "title": "An elevated train in the city",
+    "kind": "single",
+    "turns": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "columns": [
+      {
+        "label": "Input image",
+        "role": "input",
+        "frames": [
+          "sensenova-0037-37/000-source.webp",
+          "sensenova-0037-37/000-source.webp",
+          "sensenova-0037-37/000-source.webp",
+          "sensenova-0037-37/000-source.webp",
+          "sensenova-0037-37/000-source.webp",
+          "sensenova-0037-37/000-source.webp",
+          "sensenova-0037-37/000-source.webp",
+          "sensenova-0037-37/000-source.webp",
+          "sensenova-0037-37/000-source.webp",
+          "sensenova-0037-37/000-source.webp",
+          "sensenova-0037-37/000-source.webp",
+          "sensenova-0037-37/000-source.webp",
+          "sensenova-0037-37/000-source.webp",
+          "sensenova-0037-37/000-source.webp",
+          "sensenova-0037-37/000-source.webp",
+          "sensenova-0037-37/000-source.webp",
+          "sensenova-0037-37/000-source.webp",
+          "sensenova-0037-37/000-source.webp",
+          "sensenova-0037-37/000-source.webp",
+          "sensenova-0037-37/000-source.webp"
+        ],
+        "aspect": 1.5238095238095237
+      },
+      {
+        "label": "Base model",
+        "role": "base",
+        "frames": [
+          "../../../results/single/sensenova/0037-37/base/turn-01.webp",
+          "../../../results/single/sensenova/0037-37/base/turn-02.webp",
+          "../../../results/single/sensenova/0037-37/base/turn-03.webp",
+          "../../../results/single/sensenova/0037-37/base/turn-04.webp",
+          "../../../results/single/sensenova/0037-37/base/turn-05.webp",
+          "../../../results/single/sensenova/0037-37/base/turn-06.webp",
+          "../../../results/single/sensenova/0037-37/base/turn-07.webp",
+          "../../../results/single/sensenova/0037-37/base/turn-08.webp",
+          "../../../results/single/sensenova/0037-37/base/turn-09.webp",
+          "../../../results/single/sensenova/0037-37/base/turn-10.webp",
+          "../../../results/single/sensenova/0037-37/base/turn-11.webp",
+          "../../../results/single/sensenova/0037-37/base/turn-12.webp",
+          "../../../results/single/sensenova/0037-37/base/turn-13.webp",
+          "../../../results/single/sensenova/0037-37/base/turn-14.webp",
+          "../../../results/single/sensenova/0037-37/base/turn-15.webp",
+          "../../../results/single/sensenova/0037-37/base/turn-16.webp",
+          "../../../results/single/sensenova/0037-37/base/turn-17.webp",
+          "../../../results/single/sensenova/0037-37/base/turn-18.webp",
+          "../../../results/single/sensenova/0037-37/base/turn-19.webp",
+          "../../../results/single/sensenova/0037-37/base/turn-20.webp"
+        ],
+        "aspect": 1.5238095238095237
+      },
+      {
+        "label": "After TailSteer",
+        "role": "tailsteer",
+        "frames": [
+          "../../../results/single/sensenova/0037-37/tailsteer/turn-01.webp",
+          "../../../results/single/sensenova/0037-37/tailsteer/turn-02.webp",
+          "../../../results/single/sensenova/0037-37/tailsteer/turn-03.webp",
+          "../../../results/single/sensenova/0037-37/tailsteer/turn-04.webp",
+          "../../../results/single/sensenova/0037-37/tailsteer/turn-05.webp",
+          "../../../results/single/sensenova/0037-37/tailsteer/turn-06.webp",
+          "../../../results/single/sensenova/0037-37/tailsteer/turn-07.webp",
+          "../../../results/single/sensenova/0037-37/tailsteer/turn-08.webp",
+          "../../../results/single/sensenova/0037-37/tailsteer/turn-09.webp",
+          "../../../results/single/sensenova/0037-37/tailsteer/turn-10.webp",
+          "../../../results/single/sensenova/0037-37/tailsteer/turn-11.webp",
+          "../../../results/single/sensenova/0037-37/tailsteer/turn-12.webp",
+          "../../../results/single/sensenova/0037-37/tailsteer/turn-13.webp",
+          "../../../results/single/sensenova/0037-37/tailsteer/turn-14.webp",
+          "../../../results/single/sensenova/0037-37/tailsteer/turn-15.webp",
+          "../../../results/single/sensenova/0037-37/tailsteer/turn-16.webp",
+          "../../../results/single/sensenova/0037-37/tailsteer/turn-17.webp",
+          "../../../results/single/sensenova/0037-37/tailsteer/turn-18.webp",
+          "../../../results/single/sensenova/0037-37/tailsteer/turn-19.webp",
+          "../../../results/single/sensenova/0037-37/tailsteer/turn-20.webp"
+        ],
+        "aspect": 1.5238095238095237
+      }
+    ],
+    "prompts": [
+      "Add a narrow cobalt-blue stripe beneath the train's side windows, retaining all signs and numbering. Keep all other details and prior edits unchanged.",
+      "Fit a small protective metal grille around the front coupler, without changing the coupler position. Keep all other details and prior edits unchanged.",
+      "Add a small rectangular inspection hatch to the lower front panel. Keep all other details and prior edits unchanged.",
+      "Give that hatch four visible corner fasteners. Keep all other details and prior edits unchanged.",
+      "Add a slim rain deflector above the front destination display, keeping 'Kimball' legible. Keep all other details and prior edits unchanged.",
+      "Add a short pair of windshield-wiper arms resting along the front windows' lower edges. Keep all other details and prior edits unchanged.",
+      "Place a small trackside equipment cabinet beside the rightmost rail, outside train clearance. Keep all other details and prior edits unchanged.",
+      "Give the cabinet a yellow triangular lightning warning symbol. Keep all other details and prior edits unchanged.",
+      "Add a narrow grated maintenance walkway along the elevated structure's right edge. Keep all other details and prior edits unchanged.",
+      "Fit a simple metal safety railing along the new walkway. Keep all other details and prior edits unchanged.",
+      "Slightly raise the viewpoint, retaining the train front, full visible consist, and clock tower. Keep all other details and prior edits unchanged.",
+      "Add a compact track signal beside the new walkway in the middle distance. Keep all other details and prior edits unchanged.",
+      "Illuminate the signal's green lamp with a restrained glow. Keep all other details and prior edits unchanged.",
+      "Add a small identification plate reading 'R2' below the signal. Keep all other details and prior edits unchanged.",
+      "Give the clock tower's upper balcony a slender decorative metal railing. Keep all other details and prior edits unchanged.",
+      "Add a small weather vane on the clock tower roof. Keep all other details and prior edits unchanged.",
+      "Slightly extend the canvas leftward with matching rooftops and city vegetation. Keep all other details and prior edits unchanged.",
+      "Add a compact row of rooftop planter boxes on the left flat building roof, away from the tracks. Keep all other details and prior edits unchanged.",
+      "Plant low ornamental grasses in those rooftop boxes. Keep all other details and prior edits unchanged.",
+      "Shift the scene to soft early-evening light, with gentle warm reflections along the silver train panels. Retain the blue train stripe, coupler grille, inspection hatch, and green signal. Keep all other details and prior edits unchanged."
+    ],
+    "defaultTurn": 20,
+    "shortPrompts": [
+      "Add a cobalt stripe beneath the train windows.",
+      "Fit a protective grille around the front coupler.",
+      "Add an inspection hatch to the front panel.",
+      "Fit four fasteners to the hatch corners.",
+      "Add a rain deflector above the destination sign.",
+      "Fit resting wipers to the front windows.",
+      "Place an equipment cabinet beside the right rail.",
+      "Add a yellow lightning warning to the cabinet.",
+      "Build a grated walkway along the right edge.",
+      "Fit a safety railing to the walkway.",
+      "Raise the viewpoint slightly.",
+      "Place a track signal beside the walkway.",
+      "Illuminate the signal's green lamp.",
+      "Add an 'R2' plate below the signal.",
+      "Add a decorative railing to the tower balcony.",
+      "Place a weather vane on the clock tower.",
+      "Extend the city rooftops leftward.",
+      "Add planter boxes to the left flat roof.",
+      "Plant low grasses in the rooftop boxes.",
+      "Shift to soft early-evening light."
+    ]
+  },
+  "multi": {
+    "id": "sensenova-01-atrium-creative-corner",
+    "title": "An atrium creative corner",
+    "kind": "objects",
+    "turns": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "columns": [
+      {
+        "label": "All input images",
+        "role": "reference",
+        "frames": [
+          "sensenova-01-atrium-creative-corner/000-all-inputs.webp",
+          "sensenova-01-atrium-creative-corner/000-all-inputs.webp",
+          "sensenova-01-atrium-creative-corner/000-all-inputs.webp",
+          "sensenova-01-atrium-creative-corner/000-all-inputs.webp",
+          "sensenova-01-atrium-creative-corner/000-all-inputs.webp"
+        ],
+        "aspect": 1.3333333333333333
+      },
+      {
+        "label": "Base model",
+        "role": "base",
+        "frames": [
+          "../../../results/multi/sensenova/01-atrium-creative-corner/base-01.webp",
+          "../../../results/multi/sensenova/01-atrium-creative-corner/base-02.webp",
+          "../../../results/multi/sensenova/01-atrium-creative-corner/base-03.webp",
+          "../../../results/multi/sensenova/01-atrium-creative-corner/base-04.webp",
+          "../../../results/multi/sensenova/01-atrium-creative-corner/base-05.webp"
+        ],
+        "aspect": 1.5238095238095237
+      },
+      {
+        "label": "After TailSteer",
+        "role": "tailsteer",
+        "frames": [
+          "../../../results/multi/sensenova/01-atrium-creative-corner/tailsteer-01.webp",
+          "../../../results/multi/sensenova/01-atrium-creative-corner/tailsteer-02.webp",
+          "../../../results/multi/sensenova/01-atrium-creative-corner/tailsteer-03.webp",
+          "../../../results/multi/sensenova/01-atrium-creative-corner/tailsteer-04.webp",
+          "../../../results/multi/sensenova/01-atrium-creative-corner/tailsteer-05.webp"
+        ],
+        "aspect": 1.5238095238095237
+      }
+    ],
+    "prompts": [
+      "Edit image 1 as the existing scene; it is not an identity reference to replace. Arrange a compact creative corner on the dry tiled foreground floor, mainly left of the reflecting pool. Keep the windows, green wall, pool, architecture and camera unchanged. Never place objects in the water; leave gaps between subjects. Add exactly 4 new subjects from images 2 through 5. From image 2, add exactly one dark gray beanbag chair: on the left floor near 13% width and 76% height, about 15% image height. From image 3, add exactly one sunburst acoustic guitar: standing upright on the floor near 33% width, bottom at 73% height, about 27% image height. From image 4, add exactly one vintage table lamp with its cream shade: standing on the dry floor near 46% width and 73% height, about 17% image height. From image 5, add exactly one open silver laptop: open on the dry floor near 59% width and 81% height, about 13% image width.  Preserve their identity, appearance, size and positions, and preserve the original scene, camera and framing. Transfer only the specified subject from each reference, not its background or any text labels. Do not add duplicate copies or extra subjects. Allow only necessary local occlusion, natural lighting and contact shadows around the new additions. Leave room for later additions; do not rearrange existing subjects. The scene should now retain 4 inserted reference subjects in total, in addition to any original scene contents.",
+      "Edit image 1 as the existing scene; it is not an identity reference to replace. Arrange a compact creative corner on the dry tiled foreground floor, mainly left of the reflecting pool. Keep the windows, green wall, pool, architecture and camera unchanged. Never place objects in the water; leave gaps between subjects. Add exactly 3 new subjects from images 2 through 4. From image 2, add exactly one black portable radio with its blue tuner display: on the floor near 11% width and 87% height, about 11% image width. From image 3, add exactly one brown wooden telephone with its handset: on the floor near 26% width and 86% height, about 10% image width. From image 4, add exactly one black compact action camera: upright on the floor near 41% width and 85% height, about 7% image height. Keep all previously inserted subjects unchanged: dark gray beanbag chair; sunburst acoustic guitar; vintage table lamp with its cream shade; open silver laptop. Preserve their identity, appearance, size and positions, and preserve the original scene, camera and framing. Transfer only the specified subject from each reference, not its background or any text labels. Do not add duplicate copies or extra subjects. Allow only necessary local occlusion, natural lighting and contact shadows around the new additions. Leave room for later additions; do not rearrange existing subjects. The scene should now retain 7 inserted reference subjects in total, in addition to any original scene contents.",
+      "Edit image 1 as the existing scene; it is not an identity reference to replace. Arrange a compact creative corner on the dry tiled foreground floor, mainly left of the reflecting pool. Keep the windows, green wall, pool, architecture and camera unchanged. Never place objects in the water; leave gaps between subjects. Add exactly 3 new subjects from images 2 through 4. From image 2, add exactly one black and gold over-ear headphones: resting on the floor near 10% width and 97% height, about 9% image width. From image 3, add exactly one spiral notebook with its illustrated cover: lying on the floor near 25% width and 97% height, about 9% image width. From image 4, add exactly one compact black coffee maker with the cup on its tray: upright on the dry floor near 57% width and 93% height, about 11% image height. Keep all previously inserted subjects unchanged: dark gray beanbag chair; sunburst acoustic guitar; vintage table lamp with its cream shade; open silver laptop; black portable radio with its blue tuner display; brown wooden telephone with its handset; black compact action camera. Preserve their identity, appearance, size and positions, and preserve the original scene, camera and framing. Transfer only the specified subject from each reference, not its background or any text labels. Do not add duplicate copies or extra subjects. Allow only necessary local occlusion, natural lighting and contact shadows around the new additions. Leave room for later additions; do not rearrange existing subjects. The scene should now retain 10 inserted reference subjects in total, in addition to any original scene contents.",
+      "Edit image 1 as the existing scene; it is not an identity reference to replace. Arrange a compact creative corner on the dry tiled foreground floor, mainly left of the reflecting pool. Keep the windows, green wall, pool, architecture and camera unchanged. Never place objects in the water; leave gaps between subjects. Add exactly 2 new subjects from images 2 through 3. From image 2, add exactly one silver stapler: on the front floor near 40% width and 97% height, about 7% image width. From image 3, add exactly one closed brown hardcover book: lying flat on the front floor near 71% width and 96% height, about 9% image width. Keep all previously inserted subjects unchanged: dark gray beanbag chair; sunburst acoustic guitar; vintage table lamp with its cream shade; open silver laptop; black portable radio with its blue tuner display; brown wooden telephone with its handset; black compact action camera; black and gold over-ear headphones; spiral notebook with its illustrated cover; compact black coffee maker with the cup on its tray. Preserve their identity, appearance, size and positions, and preserve the original scene, camera and framing. Transfer only the specified subject from each reference, not its background or any text labels. Do not add duplicate copies or extra subjects. Allow only necessary local occlusion, natural lighting and contact shadows around the new additions. Leave room for later additions; do not rearrange existing subjects. The scene should now retain 12 inserted reference subjects in total, in addition to any original scene contents.",
+      "Edit image 1 as the existing scene; it is not an identity reference to replace. Arrange a compact creative corner on the dry tiled foreground floor, mainly left of the reflecting pool. Keep the windows, green wall, pool, architecture and camera unchanged. Never place objects in the water; leave gaps between subjects. Add exactly 2 new subjects from images 2 through 3. From image 2, add exactly one black tablet with its colorful screen: propped up on the front-right dry floor near 88% width and 95% height, about 10% image width. From image 3, add exactly one brown violin: lying diagonally on the open center-left floor near 25% width and 66% height, about 15% image width. Keep all previously inserted subjects unchanged: dark gray beanbag chair; sunburst acoustic guitar; vintage table lamp with its cream shade; open silver laptop; black portable radio with its blue tuner display; brown wooden telephone with its handset; black compact action camera; black and gold over-ear headphones; spiral notebook with its illustrated cover; compact black coffee maker with the cup on its tray; silver stapler; closed brown hardcover book. Preserve their identity, appearance, size and positions, and preserve the original scene, camera and framing. Transfer only the specified subject from each reference, not its background or any text labels. Do not add duplicate copies or extra subjects. Allow only necessary local occlusion, natural lighting and contact shadows around the new additions. Leave room for later additions; do not rearrange existing subjects. The scene should now retain 14 inserted reference subjects in total, in addition to any original scene contents."
+    ],
+    "sourceImage": "../../../results/multi/sensenova/01-atrium-creative-corner/source.webp",
+    "referenceDescription": "The original scene and all reference inputs are shown together. References are introduced over successive turns; each chain feeds back its own previous output.",
+    "referenceImages": [
+      {
+        "src": "../../../results/multi/sensenova/01-atrium-creative-corner/references/reference-01.webp",
+        "label": "Reference 1"
+      },
+      {
+        "src": "../../../results/multi/sensenova/01-atrium-creative-corner/references/reference-02.webp",
+        "label": "Reference 2"
+      },
+      {
+        "src": "../../../results/multi/sensenova/01-atrium-creative-corner/references/reference-03.webp",
+        "label": "Reference 3"
+      },
+      {
+        "src": "../../../results/multi/sensenova/01-atrium-creative-corner/references/reference-04.webp",
+        "label": "Reference 4"
+      },
+      {
+        "src": "../../../results/multi/sensenova/01-atrium-creative-corner/references/reference-05.webp",
+        "label": "Reference 5"
+      },
+      {
+        "src": "../../../results/multi/sensenova/01-atrium-creative-corner/references/reference-06.webp",
+        "label": "Reference 6"
+      },
+      {
+        "src": "../../../results/multi/sensenova/01-atrium-creative-corner/references/reference-07.webp",
+        "label": "Reference 7"
+      },
+      {
+        "src": "../../../results/multi/sensenova/01-atrium-creative-corner/references/reference-08.webp",
+        "label": "Reference 8"
+      },
+      {
+        "src": "../../../results/multi/sensenova/01-atrium-creative-corner/references/reference-09.webp",
+        "label": "Reference 9"
+      },
+      {
+        "src": "../../../results/multi/sensenova/01-atrium-creative-corner/references/reference-10.webp",
+        "label": "Reference 10"
+      },
+      {
+        "src": "../../../results/multi/sensenova/01-atrium-creative-corner/references/reference-11.webp",
+        "label": "Reference 11"
+      },
+      {
+        "src": "../../../results/multi/flux2/03-people-and-props/references/reference-10.webp",
+        "label": "Reference 12"
+      },
+      {
+        "src": "../../../results/multi/sensenova/01-atrium-creative-corner/references/reference-13.webp",
+        "label": "Reference 13"
+      },
+      {
+        "src": "../../../results/multi/sensenova/01-atrium-creative-corner/references/reference-14.webp",
+        "label": "Reference 14"
+      }
+    ],
+    "defaultTurn": 5
+  }
+}

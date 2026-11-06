@@ -1,0 +1,4 @@
+source: ${TAILSTEER_ROOT}/upstream/Qwen-Image-Bench
+model: ${TAILSTEER_MODEL_ROOT}/Q-Judger
+python: python
+batch_size: 8

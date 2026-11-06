@@ -1,0 +1,22 @@
+[
+  {
+    "id": "t2i-qwen-qib-en-0045",
+    "modelId": "qwen",
+    "prompt": "This image recreates a winter snow scene at the Forbidden City in Beijing, simulated using a Nikon D850 camera with a 50mm standard lens and f/2.8 aperture. Aperture effect: The Meridian Gate Square is covered with a thin, soft layer of fresh snow, the snowflakes are fine and discernible, the surface is slightly damp and reflective, reflecting the lead-gray winter sky; the vermilion palace walls are even more intense and saturated against the snow, the peeling paint and moss in the brick seams are clearly visible, highlighting the texture of 600 years of history; the snow on the golden glazed tile roof is light, snowflakes are slowly falling on it, some of the dripping water on the roof tiles is slightly melting, forming tiny ice crystals; in the foreground, several tourists wearing dark down jackets, woolen hats and scarves, holding modern digital cameras or mobile phones, are shooting the city tower from below, their breath steaming in the white mist; in the midground, the stone lions are covered with a thin layer of snow, their bases are mottled; in the background, the outline of the corner tower is faintly visible in the soft focus blur; the overall image is sharp and layered, the shallow depth of field highlights the main body of the Meridian Gate, the highlights of the snow and the details of the shadows on the red walls are well preserved, the color tone is cold but warm, conveying the solemn, quiet and dignified winter charm of the Forbidden City.",
+    "seed": 86,
+    "images": {
+      "base": "../../../results/t2i/qwen-qib-en-0045-base.webp",
+      "tailsteer": "../../../results/t2i/qwen-qib-en-0045-tailsteer.webp"
+    }
+  },
+  {
+    "id": "t2i-qwen-qib-en-0047",
+    "modelId": "qwen",
+    "prompt": "realistic half-body close-up portrait of a European model wearing a traditional Quanzhou-style hairpin, combining silk flowers with silver ornaments. The floral elements are layered yet not overly elaborate; the makeup is restrained, and the skin's texture is natural, revealing subtle details; side-backlighting creates contour lighting around the hair, and the silver ornaments reflect light realistically without overexposure; the model has a gentle, confident smile, looking directly at the camera; the background is a light-colored wall with a slight blur. The hairpin should have a reasonable structure, with petal edges that don't melt, and the style should be consistent with a VOGUE cover magazine aesthetic—a high-fashion portrait.",
+    "seed": 88,
+    "images": {
+      "base": "../../../results/t2i/qwen-qib-en-0047-base.webp",
+      "tailsteer": "../../../results/t2i/qwen-qib-en-0047-tailsteer.webp"
+    }
+  }
+]

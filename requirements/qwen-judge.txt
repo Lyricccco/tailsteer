@@ -1,0 +1,10 @@
+# Install in a separate environment, following Qwen-Image-Bench's PyTorch requirements.
+torch==2.8.0
+torchvision==0.23.0
+ms-swift==4.3.1
+transformers==5.2.0
+flash-linear-attention==0.5.1
+qwen-vl-utils==0.0.14
+pandas==2.3.3
+openpyxl==3.1.5
+Pillow==11.3.0

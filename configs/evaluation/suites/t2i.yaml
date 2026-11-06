@@ -1,0 +1,3 @@
+kind: evaluation
+benchmarks: [qwenimagebench, bizgeneval]
+policies: [base, tailsteer]

@@ -1,0 +1,74 @@
+{
+  "models": {
+    "flux2": [
+      {
+        "id": "t2i-flux2-qib-en-0005",
+        "modelId": "flux2",
+        "prompt": "A Japanese geiko, set on a spring afternoon beneath a blooming cherry tree: she stands in a vibrant crimson furisode kimono embroidered with gold-thread tortoiseshell and wave motifs, showcasing Kyoto Yuzen dyeing craftsmanship; her obi is a rich scarlet maru obi tied in a formal “taiko musubi” drum knot, its silk surface softly lustrous; she holds a vermilion-lacquered, gold-painted uchiwa fan partially covering her chest, adorned with gold-leaf cherry blossoms and crane feathers; her shimada hairstyle is meticulously coiffed with tortoiseshell kanzashi, floral hairpins, and silver butterflies, each strand of jet-black hair rendered with precision; her face is powdered white like porcelain, lips dabbed with cinnabar, eyes downcast in serene composure; a gentle breeze carries pale pink cherry petals swirling past her shoulders and fan edge, lifting strands of hair and kimono hems; the background melts into a soft-focus sakura grove, with dappled sunlight highlighting fabric texture and fold depth; rendered in cinematic soft-focus tones, every detail exquisitely refined, evoking mono no aware and Edo-period elegance",
+        "seed": 46,
+        "images": {
+          "base": "assets/results/t2i/flux2-qib-en-0005-base.webp",
+          "tailsteer": "assets/results/t2i/flux2-qib-en-0005-tailsteer.webp"
+        }
+      },
+      {
+        "id": "t2i-flux2-qib-en-0029",
+        "modelId": "flux2",
+        "prompt": "Generate a realistic landscape image of an \"Autumn Forest Trail,\" requiring rich yet not glaring colors: harmonious blend of red maple leaves, yellow ginkgo leaves, and green moss; oblique golden sunlight; and detailed highlights and shadows without overexposure.",
+        "seed": 70,
+        "images": {
+          "base": "assets/results/t2i/flux2-qib-en-0029-base.webp",
+          "tailsteer": "assets/results/t2i/flux2-qib-en-0029-tailsteer.webp"
+        }
+      }
+    ],
+    "sensenova": [
+      {
+        "id": "t2i-sensenova-0132",
+        "modelId": "sensenova",
+        "prompt": "生成一张3:4竖幅、2K分辨率的写实人像照片。按下述镜头要求构图；保持3:4画幅，不添加边框、拼贴或文字。\n\n高分辨率自然人像摄影，一位长发女性站在窗边，逆光照明，脸部轻微转向镜头，神情自然，背景极简。\n\n重点表现头发与发际线细节：逆光下大量独立发丝、耳侧细碎头发、发际线绒毛、头发边缘的半透明感与层次感。面部同时保留自然毛孔、嘴唇纹理、眉毛毛流和眼部细节。不要让头发粘成一大片深色块，不要出现杂乱断裂发丝或模糊边缘。\n\n真实摄影风格，柔和逆光，局部高光自然，整体细节丰富，头发边缘极其清晰。",
+        "seed": 42,
+        "images": {
+          "base": "assets/results/t2i/sensenova-0132-base.webp",
+          "tailsteer": "assets/results/t2i/sensenova-0132-tailsteer.webp"
+        },
+        "displayPrompt": "Generate a realistic portrait photograph in a vertical 3:4 format at 2K resolution. Compose the shot as described below; keep the 3:4 aspect ratio without borders, collages, or text.\n\nHigh-resolution natural portrait photography: a long-haired woman stands beside a window, backlit, with her face turned slightly toward the camera and a natural expression, against a minimalist background.\n\nEmphasize hair and hairline detail: many individual backlit strands, fine wisps beside the ears, baby hairs along the hairline, and the translucency and layering of the hair's edges. Preserve natural skin pores, lip texture, individual eyebrow hairs, and eye details. Do not merge the hair into a large dark mass, and avoid disordered broken strands or blurry edges.\n\nPhotorealistic style, soft backlighting, natural local highlights, rich overall detail, and exceptionally crisp hair edges.",
+        "promptLabel": "Prompt · English translation"
+      },
+      {
+        "id": "t2i-sensenova-0141",
+        "modelId": "sensenova",
+        "prompt": "生成一张3:4竖幅、2K分辨率的写实人像照片。按下述镜头要求构图；保持3:4画幅，不添加边框、拼贴或文字。\n\n高分辨率环境人像摄影，一位年轻女性站在室内窗边，半身构图，穿简洁针织上衣，背景为柔和虚化的生活化室内环境。\n\n尽管是半身环境人像，仍需清晰保留面部细节：毛孔、眉毛、睫毛、唇纹、发际线碎发和自然肤色变化。同时呈现针织物纤维纹理、头发层次和背景柔和景深。不要因场景信息增多而牺牲面部微观结构。\n\n真实摄影风格，自然窗光，整体协调且细节丰富。",
+        "seed": 42,
+        "images": {
+          "base": "assets/results/t2i/sensenova-0141-base.webp",
+          "tailsteer": "assets/results/t2i/sensenova-0141-tailsteer.webp"
+        },
+        "displayPrompt": "Generate a realistic portrait photograph in a vertical 3:4 format at 2K resolution. Compose the shot as described below; keep the 3:4 aspect ratio without borders, collages, or text.\n\nHigh-resolution environmental portrait photography: a young woman stands indoors beside a window, framed from the waist up, wearing a simple knitted top. The background is a softly blurred, lived-in interior.\n\nDespite the wider environmental framing, clearly preserve facial detail: pores, eyebrows, eyelashes, lip lines, fine hairs along the hairline, and natural variations in skin tone. Also show the knitted fabric's fiber texture, layers of hair, and soft background depth of field. Do not sacrifice microscopic facial structure as more of the scene enters the frame.\n\nPhotorealistic style, natural window light, a harmonious overall image, and rich detail.",
+        "promptLabel": "Prompt · English translation"
+      }
+    ],
+    "qwen": [
+      {
+        "id": "t2i-qwen-qib-en-0045",
+        "modelId": "qwen",
+        "prompt": "This image recreates a winter snow scene at the Forbidden City in Beijing, simulated using a Nikon D850 camera with a 50mm standard lens and f/2.8 aperture. Aperture effect: The Meridian Gate Square is covered with a thin, soft layer of fresh snow, the snowflakes are fine and discernible, the surface is slightly damp and reflective, reflecting the lead-gray winter sky; the vermilion palace walls are even more intense and saturated against the snow, the peeling paint and moss in the brick seams are clearly visible, highlighting the texture of 600 years of history; the snow on the golden glazed tile roof is light, snowflakes are slowly falling on it, some of the dripping water on the roof tiles is slightly melting, forming tiny ice crystals; in the foreground, several tourists wearing dark down jackets, woolen hats and scarves, holding modern digital cameras or mobile phones, are shooting the city tower from below, their breath steaming in the white mist; in the midground, the stone lions are covered with a thin layer of snow, their bases are mottled; in the background, the outline of the corner tower is faintly visible in the soft focus blur; the overall image is sharp and layered, the shallow depth of field highlights the main body of the Meridian Gate, the highlights of the snow and the details of the shadows on the red walls are well preserved, the color tone is cold but warm, conveying the solemn, quiet and dignified winter charm of the Forbidden City.",
+        "seed": 86,
+        "images": {
+          "base": "assets/results/t2i/qwen-qib-en-0045-base.webp",
+          "tailsteer": "assets/results/t2i/qwen-qib-en-0045-tailsteer.webp"
+        }
+      },
+      {
+        "id": "t2i-qwen-qib-en-0047",
+        "modelId": "qwen",
+        "prompt": "realistic half-body close-up portrait of a European model wearing a traditional Quanzhou-style hairpin, combining silk flowers with silver ornaments. The floral elements are layered yet not overly elaborate; the makeup is restrained, and the skin's texture is natural, revealing subtle details; side-backlighting creates contour lighting around the hair, and the silver ornaments reflect light realistically without overexposure; the model has a gentle, confident smile, looking directly at the camera; the background is a light-colored wall with a slight blur. The hairpin should have a reasonable structure, with petal edges that don't melt, and the style should be consistent with a VOGUE cover magazine aesthetic—a high-fashion portrait.",
+        "seed": 88,
+        "images": {
+          "base": "assets/results/t2i/qwen-qib-en-0047-base.webp",
+          "tailsteer": "assets/results/t2i/qwen-qib-en-0047-tailsteer.webp"
+        }
+      }
+    ]
+  }
+}

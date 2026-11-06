@@ -1,0 +1,300 @@
+{
+  "model": "FLUX.2 [klein] Base 9B",
+  "step": 2000,
+  "steering_onset": 46,
+  "single": {
+    "base": {
+      "qwen_en": 49.27,
+      "qwen_zh": 49.16,
+      "bizgen": 9.87,
+      "gedit_en": 7.47,
+      "gedit_zh": 7.42,
+      "rise": 14.17,
+      "imgedit": 4.2
+    },
+    "tailsteer": {
+      "qwen_en": 49.42,
+      "qwen_zh": 49.37,
+      "bizgen": 10.97,
+      "gedit_en": 7.52,
+      "gedit_zh": 7.39,
+      "rise": 13.61,
+      "imgedit": 4.19
+    },
+    "deltas": {
+      "qwen_en": 0.1491105555555734,
+      "qwen_zh": 0.2110083333332966,
+      "bizgen": 1.1000000000000014,
+      "gedit_en": 0.04720992298325477,
+      "gedit_zh": -0.03616136712160767,
+      "rise": -0.55555555555555,
+      "imgedit": -0.01666666666666572
+    }
+  },
+  "preservation": {
+    "base": {
+      "coa": 31.02,
+      "psnr": 13.85,
+      "ssim": 0.289,
+      "lpips": 0.524
+    },
+    "tailsteer": {
+      "coa": 31.84,
+      "psnr": 19.96,
+      "ssim": 0.621,
+      "lpips": 0.29
+    }
+  },
+  "rounds": {
+    "base": [
+      {
+        "policy": "pretrained",
+        "round": 1,
+        "n": 100,
+        "expected": 100,
+        "psnr_mean": 29.349049241393978,
+        "psnr_std": 3.363471723033023,
+        "ssim_mean": 0.9051241762150106,
+        "ssim_std": 0.04945186215543364,
+        "lpips_mean": 0.027663326168519183,
+        "lpips_std": 0.012549410209579153
+      },
+      {
+        "policy": "pretrained",
+        "round": 2,
+        "n": 100,
+        "expected": 100,
+        "psnr_mean": 25.053306964939207,
+        "psnr_std": 2.9097242124486717,
+        "ssim_mean": 0.8294925847483902,
+        "ssim_std": 0.07173440672944177,
+        "lpips_mean": 0.07131325015528737,
+        "lpips_std": 0.025031614319582417
+      },
+      {
+        "policy": "pretrained",
+        "round": 3,
+        "n": 100,
+        "expected": 100,
+        "psnr_mean": 22.037818373975732,
+        "psnr_std": 2.6990045191188035,
+        "ssim_mean": 0.7382251437447147,
+        "ssim_std": 0.09215673176609279,
+        "lpips_mean": 0.12969029324870396,
+        "lpips_std": 0.04097234234631871
+      },
+      {
+        "policy": "pretrained",
+        "round": 4,
+        "n": 100,
+        "expected": 100,
+        "psnr_mean": 19.866492038227385,
+        "psnr_std": 2.582548165744716,
+        "ssim_mean": 0.643616695018657,
+        "ssim_std": 0.10846198506533117,
+        "lpips_mean": 0.19508005789690638,
+        "lpips_std": 0.05816240860521969
+      },
+      {
+        "policy": "pretrained",
+        "round": 5,
+        "n": 100,
+        "expected": 100,
+        "psnr_mean": 18.291482619674138,
+        "psnr_std": 2.496277036910254,
+        "ssim_mean": 0.5625955183179773,
+        "ssim_std": 0.11678801843827785,
+        "lpips_mean": 0.25698066806724845,
+        "lpips_std": 0.07049428610540438
+      },
+      {
+        "policy": "pretrained",
+        "round": 6,
+        "n": 100,
+        "expected": 100,
+        "psnr_mean": 17.122863261652068,
+        "psnr_std": 2.417745616094558,
+        "ssim_mean": 0.49416327721882203,
+        "ssim_std": 0.12248361718952937,
+        "lpips_mean": 0.31374463728284635,
+        "lpips_std": 0.08514597420952
+      },
+      {
+        "policy": "pretrained",
+        "round": 7,
+        "n": 100,
+        "expected": 100,
+        "psnr_mean": 16.14015761638462,
+        "psnr_std": 2.35468720354404,
+        "ssim_mean": 0.43512577353104026,
+        "ssim_std": 0.1264346645849292,
+        "lpips_mean": 0.3691886008906078,
+        "lpips_std": 0.09619374943168693
+      },
+      {
+        "policy": "pretrained",
+        "round": 8,
+        "n": 100,
+        "expected": 100,
+        "psnr_mean": 15.257139044607692,
+        "psnr_std": 2.25510941093785,
+        "ssim_mean": 0.37886758380295965,
+        "ssim_std": 0.12222939762185153,
+        "lpips_mean": 0.42546095586954746,
+        "lpips_std": 0.1037591244979191
+      },
+      {
+        "policy": "pretrained",
+        "round": 9,
+        "n": 100,
+        "expected": 100,
+        "psnr_mean": 14.519867605855852,
+        "psnr_std": 2.198266800891654,
+        "ssim_mean": 0.32950960703526955,
+        "ssim_std": 0.119569539916943,
+        "lpips_mean": 0.47597613866538224,
+        "lpips_std": 0.1103676454356385
+      },
+      {
+        "policy": "pretrained",
+        "round": 10,
+        "n": 100,
+        "expected": 100,
+        "psnr_mean": 13.852369092064675,
+        "psnr_std": 2.1001612309547864,
+        "ssim_mean": 0.2885322918872821,
+        "ssim_std": 0.11405623205702785,
+        "lpips_mean": 0.5243201554248904,
+        "lpips_std": 0.11696844055077288
+      }
+    ],
+    "tailsteer": [
+      {
+        "policy": "all_refined",
+        "round": 1,
+        "n": 100,
+        "expected": 100,
+        "psnr_mean": 32.55655562862055,
+        "psnr_std": 4.224127895288958,
+        "ssim_mean": 0.9310395032218708,
+        "ssim_std": 0.043020791640208625,
+        "lpips_mean": 0.014467078559680711,
+        "lpips_std": 0.009657071091224614
+      },
+      {
+        "policy": "all_refined",
+        "round": 2,
+        "n": 100,
+        "expected": 100,
+        "psnr_mean": 30.02893454319123,
+        "psnr_std": 3.691939752447598,
+        "ssim_mean": 0.9075692896481545,
+        "ssim_std": 0.05229637400312185,
+        "lpips_mean": 0.028281407322553864,
+        "lpips_std": 0.014870117982818554
+      },
+      {
+        "policy": "all_refined",
+        "round": 3,
+        "n": 100,
+        "expected": 100,
+        "psnr_mean": 27.98377089901628,
+        "psnr_std": 3.4120812994238783,
+        "ssim_mean": 0.8784602167216835,
+        "ssim_std": 0.06439221705037139,
+        "lpips_mean": 0.047823974058526106,
+        "lpips_std": 0.023671441538726284
+      },
+      {
+        "policy": "all_refined",
+        "round": 4,
+        "n": 100,
+        "expected": 100,
+        "psnr_mean": 26.28986490871313,
+        "psnr_std": 3.260079443145971,
+        "ssim_mean": 0.8455178024888247,
+        "ssim_std": 0.07784929765108849,
+        "lpips_mean": 0.07268984313891894,
+        "lpips_std": 0.03584068613916115
+      },
+      {
+        "policy": "all_refined",
+        "round": 5,
+        "n": 100,
+        "expected": 100,
+        "psnr_mean": 24.858151735511754,
+        "psnr_std": 3.151939841878124,
+        "ssim_mean": 0.8101097942166543,
+        "ssim_std": 0.09163038165313207,
+        "lpips_mean": 0.10215625508855519,
+        "lpips_std": 0.05047751698608541
+      },
+      {
+        "policy": "all_refined",
+        "round": 6,
+        "n": 100,
+        "expected": 100,
+        "psnr_mean": 23.631301238637175,
+        "psnr_std": 3.0773058118679204,
+        "ssim_mean": 0.7729175481751475,
+        "ssim_std": 0.10522551598743882,
+        "lpips_mean": 0.13525144692241728,
+        "lpips_std": 0.06647119888403702
+      },
+      {
+        "policy": "all_refined",
+        "round": 7,
+        "n": 100,
+        "expected": 100,
+        "psnr_mean": 22.562292334778853,
+        "psnr_std": 2.99982937056803,
+        "ssim_mean": 0.7351530216626387,
+        "ssim_std": 0.11796429339628003,
+        "lpips_mean": 0.1709989461865258,
+        "lpips_std": 0.08343609633514043
+      },
+      {
+        "policy": "all_refined",
+        "round": 8,
+        "n": 100,
+        "expected": 100,
+        "psnr_mean": 21.617339164690108,
+        "psnr_std": 2.9457292654565794,
+        "ssim_mean": 0.697189348863989,
+        "ssim_std": 0.1299427042958438,
+        "lpips_mean": 0.20895268929301664,
+        "lpips_std": 0.10083253011198119
+      },
+      {
+        "policy": "all_refined",
+        "round": 9,
+        "n": 100,
+        "expected": 100,
+        "psnr_mean": 20.741157219027727,
+        "psnr_std": 2.8826731897472895,
+        "ssim_mean": 0.6586771879394107,
+        "ssim_std": 0.1407897780161652,
+        "lpips_mean": 0.24923371611317152,
+        "lpips_std": 0.11800782073337061
+      },
+      {
+        "policy": "all_refined",
+        "round": 10,
+        "n": 100,
+        "expected": 100,
+        "psnr_mean": 19.960988389489895,
+        "psnr_std": 2.8384487671111436,
+        "ssim_mean": 0.6210330028969914,
+        "ssim_std": 0.1502794440128247,
+        "lpips_mean": 0.28981838666121,
+        "lpips_std": 0.1340310414134439
+      }
+    ]
+  },
+  "n_images": 100,
+  "feedback": "image",
+  "visuals": {
+    "single": "flux2-0023-23",
+    "multi": "flux2-ryze-video-moderate20"
+  }
+}

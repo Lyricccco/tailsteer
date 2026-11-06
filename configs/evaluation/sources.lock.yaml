@@ -1,0 +1,86 @@
+schema_version: 1
+benchmarks:
+  bizgeneval:
+    code_repo: microsoft/BizGenEval
+    code_revision: 39e1bdcdf86ec7cae88f57cc53c6e0d352126340
+    code_paths:
+    - evaluation/evaluate_prompt.py
+    - utils/parsers.py
+    - assets/bizgeneval.jsonl
+    - LICENSE
+  qwenimagebench:
+    code_repo: QwenLM/Qwen-Image-Bench
+    code_revision: 8ab1fb47df2fba7b0cb046770a87f6323b98ecfc
+    code_paths:
+    - judge.py
+    - score_utils.py
+    - checklists.py
+    - backends/
+    - metadata/
+    - LICENSE
+  gedit:
+    code_repo: stepfun-ai/Step1X-Edit
+    code_revision: 4cca05dfcd6c32dc810d0b4db84c2bf0682a5aeb
+    code_paths:
+    - GEdit-Bench/
+    - LICENSE
+    code_subdir: GEdit-Bench
+    dataset_repo: stepfun-ai/GEdit-Bench
+    dataset_revision: main
+    dataset_files:
+    - '*.parquet'
+    - data/*.parquet
+    - README.md
+  rise:
+    code_repo: PhoenixZ810/RISEBench
+    code_revision: 5f226519b25c005bb32fb83864bbd1845ab85c23
+    code_paths:
+    - gpt_eval.py
+    - utils.py
+    - README.md
+    - LICENSE
+    dataset_repo: PhoenixZ/RISEBench
+    dataset_revision: 265f052e94914c5c9317d27f325eee60df5ca410
+    dataset_files:
+    - data.zip
+    - datav2_total_w_subtask.json
+    - README.md
+  imgedit-basic:
+    code_repo: PKU-YuanGroup/ImgEdit
+    code_revision: b79848168744c8db8389086d01fe3def1758aa45
+    code_paths:
+    - Benchmark/Basic/
+    - LICENSE
+    code_subdir: Benchmark/Basic
+    dataset_repo: sysuyy/ImgEdit
+    dataset_revision: f8de753484a2b6bd37f135fd20d308b66b09a523
+    dataset_files:
+    - Benchmark.tar
+  mse:
+    code_repo: ByteDance-Seed/VINCIE
+    code_revision: c2f7ea1ef4ad8aaa3f02fd1bb2958c5e5bd5645b
+    code_paths:
+    - evaluation/
+    - LICENSE
+    code_subdir: evaluation
+    dataset_repo: leigangqu/MSE-Bench
+    dataset_revision: 1f77f7832b65d0c9e0539019840a521f676d0f2c
+    dataset_files:
+    - data/train-00000-of-00001.parquet
+    - README.md
+  edival:
+    code_repo: TianyuCodings/EdiVal
+    code_revision: 96d34b00d7ea2dc3de90f2bb01f292f6dec6294a
+    code_paths:
+    - eval.py
+    - detector/
+    - GroundingDINO/
+    - oai_instruction_generation_output.csv
+    - README.md
+    - LICENSE
+    - env_setup/
+    dataset_repo: C-Tianyu/EdiVal
+    dataset_revision: 583d3efe2daf81afb0a13ee2c4df06cdaad1b554
+    dataset_files:
+    - input_images_resize_512.zip
+    - README.md
