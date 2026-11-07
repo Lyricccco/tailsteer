@@ -27,7 +27,7 @@ Community demo by [hugging-apps](https://huggingface.co/hugging-apps).
 
 We'd love to see what you create with TailSteer! Share your results, ideas, or feedback with us—every little creation makes our day! (≧▽≦) ♡
 
-If you'd like to support our work, a ⭐ on [**GitHub**](https://github.com/Lyricccco/tailsteer) or a ❤️ on [**Hugging Face**](https://huggingface.co/Lyricccco/FLUX.2-klein-base-9B-TailSteer) would mean a lot—and stay tuned to our GitHub repo for future TailSteer-trained model releases! **(ง •̀ᴗ•́)ง ♡**
+If you'd like to support our work, a ⭐ on [**GitHub**](https://github.com/Lyricccco/tailsteer) or a ❤️ on [**Hugging Face**](https://huggingface.co/Lyricccco/FLUX.2-klein-base-9B-TailSteer) would mean a lot—and stay tuned to our [GitHub repo](https://github.com/Lyricccco/tailsteer) for future TailSteer-trained model releases! **(ง •̀ᴗ•́)ง ♡**
 
 ### Keep creating. Keep the details.
 
@@ -119,7 +119,7 @@ tailsteer infer --backbone flux2-klein-base-9b \
 
 Prepare the original base weights and omit `--policies tailsteer` for side-by-side comparisons. The same suite interface runs text-to-image, single-turn editing, multi-turn editing and Add & Preserve benchmarks after their datasets and judges are configured.
 
-## How TailSteer works
+## → [Explore and learn why TailSteer works](https://lyricccco.github.io/tailsteer/)
 
 **Preserve early dynamics; steer the trajectory tail.** TailSteer learns from the editor's own denoising rollouts, using unchanged source content as a preservation reference. It improves long-horizon stability using single-edit trajectories, without requiring curated ground-truth editing pairs or training on multi-turn editing chains.
 
