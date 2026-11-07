@@ -17,15 +17,15 @@
 
 ### [Click to learn why TailSteer works and explore more visual comparisons ↗](https://lyricccco.github.io/tailsteer/)
 
-**Try the released TailSteer models**
+<sub>Download &amp; run locally ↓</sub>
 
 [![FLUX.2 [klein] Base 9B · TailSteer](https://img.shields.io/badge/FLUX.2_%5Bklein%5D_Base_9B-TailSteer-692568?style=flat&logo=huggingface&logoColor=FFD21E&labelColor=26323F)](https://huggingface.co/Lyricccco/FLUX.2-klein-base-9B-TailSteer)
 [![SenseNova-U1.5-8B-MoT · TailSteer](https://img.shields.io/badge/SenseNova--U1.5--8B--MoT-TailSteer-692568?style=flat&logo=huggingface&logoColor=FFD21E&labelColor=26323F)](https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT-TailSteer)
 [![Qwen-Image-2.1 · TailSteer](https://img.shields.io/badge/Qwen--Image--2.1-TailSteer-692568?style=flat&logo=huggingface&logoColor=FFD21E&labelColor=26323F)](https://huggingface.co/Lyricccco/Qwen-Image-2.1-TailSteer)
 
-**Try the live demo in your browser — no local setup needed.**
+<sub>Try online · No setup ↓</sub>
 
-[![Live demo · FLUX.2](https://img.shields.io/badge/Live_demo-FLUX.2-692568?style=flat&logo=huggingface&logoColor=FFD21E&labelColor=26323F)](https://huggingface.co/spaces/hugging-apps/flux2-klein-tailsteer)
+[![Try the live demo — FLUX.2 TailSteer](https://img.shields.io/badge/Try_the_live_demo-FLUX.2_TailSteer-692568?style=for-the-badge&logo=huggingface&logoColor=FFD21E&labelColor=26323F)](https://huggingface.co/spaces/hugging-apps/flux2-klein-tailsteer)
 
 [![Hugging Face dataset · Source data](https://img.shields.io/badge/Dataset-Source_data-345D91?style=flat&logo=huggingface&logoColor=FFD21E&labelColor=26323F)](https://huggingface.co/datasets/Lyricccco/TailSteer-Source)
 [![Hugging Face dataset · Add & Preserve Bench](https://img.shields.io/badge/Dataset-Add_%26_Preserve_Bench-345D91?style=flat&logo=huggingface&logoColor=FFD21E&labelColor=26323F)](https://huggingface.co/datasets/Lyricccco/Add-and-Preserve)
