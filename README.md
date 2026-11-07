@@ -5,11 +5,8 @@
 
 <table align="center">
   <tr>
-    <td align="center">
-      <strong>A final stage after SFT, RL or OPD for multi-turn persistent editing</strong>
-      &nbsp;→&nbsp;
-      <a href="https://arxiv.org/abs/2611.06741v1"><img src="https://img.shields.io/badge/arXiv-2611.06741-B31B1B?style=flat&amp;logo=arxiv&amp;logoColor=white&amp;labelColor=26323F" alt="arXiv · 2611.06741"></a>
-    </td>
+    <td align="center"><strong>A final stage</strong> after <strong>SFT, RL or OPD</strong> for multi-turn persistent editing</td>
+    <td align="center">→ <a href="https://arxiv.org/abs/2611.06741v1"><img src="https://img.shields.io/badge/arXiv-2611.06741-B31B1B?style=flat&amp;logo=arxiv&amp;logoColor=white&amp;labelColor=26323F" alt="arXiv · 2611.06741"></a></td>
   </tr>
 </table>
 
@@ -17,13 +14,13 @@
 
 ### [Click to learn why TailSteer works and explore more visual comparisons ↗](https://lyricccco.github.io/tailsteer/)
 
-<sub>Download &amp; run locally ↓</sub>
+**Download models** · Run locally ↓
 
 [![FLUX.2 [klein] Base 9B · TailSteer](https://img.shields.io/badge/FLUX.2_%5Bklein%5D_Base_9B-TailSteer-692568?style=flat&logo=huggingface&logoColor=FFD21E&labelColor=26323F)](https://huggingface.co/Lyricccco/FLUX.2-klein-base-9B-TailSteer)
 [![SenseNova-U1.5-8B-MoT · TailSteer](https://img.shields.io/badge/SenseNova--U1.5--8B--MoT-TailSteer-692568?style=flat&logo=huggingface&logoColor=FFD21E&labelColor=26323F)](https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT-TailSteer)
 [![Qwen-Image-2.1 · TailSteer](https://img.shields.io/badge/Qwen--Image--2.1-TailSteer-692568?style=flat&logo=huggingface&logoColor=FFD21E&labelColor=26323F)](https://huggingface.co/Lyricccco/Qwen-Image-2.1-TailSteer)
 
-<sub>Try online · No setup ↓</sub>
+**Try online** · No setup ↓
 
 [![Try the live demo — FLUX.2 TailSteer](https://img.shields.io/badge/Try_the_live_demo-FLUX.2_TailSteer-692568?style=for-the-badge&logo=huggingface&logoColor=FFD21E&labelColor=26323F)](https://huggingface.co/spaces/hugging-apps/flux2-klein-tailsteer)
 
