@@ -6,6 +6,7 @@ base_model: sensenova/SenseNova-U1.5-8B-MoT
 base_model_relation: finetune
 tags:
 - tailsteer
+- arxiv:2611.06741
 - image-editing
 - text-to-image
 ---
@@ -104,6 +105,6 @@ Prepare the original base weights and omit `--policies tailsteer` for side-by-si
 
 This is the paper's **2,000-update checkpoint**, with training steering onset **42 / 50**. The onset controls training supervision; inference uses the trained model at every step. The packaged model was [validated against the original inference export](../validation.md).
 
-From *TailSteer: Trajectory-Tail Steering for Drift-Resistant Multi-turn Image Editing*.
+From [*TailSteer: Trajectory-Tail Steering for Drift-Resistant Multi-turn Image Editing*](https://huggingface.co/papers/2611.06741).
 
 The [base model](https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT) license and attribution apply: [LICENSE](https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT-TailSteer/blob/main/LICENSE) · [NOTICE](https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT-TailSteer/blob/main/NOTICE).

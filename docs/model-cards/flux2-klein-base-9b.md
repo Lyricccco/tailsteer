@@ -8,6 +8,7 @@ base_model: black-forest-labs/FLUX.2-klein-base-9B
 base_model_relation: finetune
 tags:
 - tailsteer
+- arxiv:2611.06741
 - image-editing
 - text-to-image
 ---
@@ -125,6 +126,6 @@ Prepare the original base weights and omit `--policies tailsteer` for side-by-si
 
 This is the paper's **2,000-update checkpoint**, with training steering onset **46 / 50**. The onset controls training supervision; inference uses the trained model at every step. The packaged model was [validated against the original inference export](../validation.md).
 
-From *TailSteer: Trajectory-Tail Steering for Drift-Resistant Multi-turn Image Editing*.
+From [*TailSteer: Trajectory-Tail Steering for Drift-Resistant Multi-turn Image Editing*](https://huggingface.co/papers/2611.06741).
 
 The [base model](https://huggingface.co/black-forest-labs/FLUX.2-klein-base-9B) license and attribution apply: [LICENSE.md](https://huggingface.co/Lyricccco/FLUX.2-klein-base-9B-TailSteer/blob/main/LICENSE.md) · [NOTICE](https://huggingface.co/Lyricccco/FLUX.2-klein-base-9B-TailSteer/blob/main/NOTICE).
