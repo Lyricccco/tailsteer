@@ -27,9 +27,7 @@ Community demo by [hugging-apps](https://huggingface.co/hugging-apps).
 
 We'd love to see what you create with TailSteer! Share your results, ideas, or feedback with us—every little creation makes our day! (≧▽≦) ♡
 
-And if you'd like to support our work, a ⭐ on [**GitHub**](https://github.com/Lyricccco/tailsteer) or a ❤️ on [**Hugging Face**](https://huggingface.co/Lyricccco/FLUX.2-klein-base-9B-TailSteer) would mean a lot to us!
-
-With your support, we hope to release even more TailSteer-trained models in the future! **(ง •̀ᴗ•́)ง ♡**
+If you'd like to support our work, a ⭐ on [**GitHub**](https://github.com/Lyricccco/tailsteer) or a ❤️ on [**Hugging Face**](https://huggingface.co/Lyricccco/FLUX.2-klein-base-9B-TailSteer) would mean a lot—and stay tuned to our GitHub repo for future TailSteer-trained model releases! **(ง •̀ᴗ•́)ง ♡**
 
 ### Keep creating. Keep the details.
 

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="552" height="36" viewBox="0 0 552 36" role="img" aria-labelledby="title">
+  <title id="title">A final stage after SFT, RL or OPD for multi-turn persistent editing</title>
+  <style>
+    rect { fill: none; stroke: #d1d9e0; }
+    text { fill: #1f2328; }
+    @media (prefers-color-scheme: dark) {
+      rect { stroke: #59636e; }
+      text { fill: #f0f6fc; }
+    }
+  </style>
+  <rect x="0.5" y="0.5" width="551" height="35" rx="4" />
+  <text x="276" y="23" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16"><tspan font-weight="700">A final stage</tspan> after <tspan font-weight="700">SFT, RL or OPD</tspan> for multi-turn persistent editing</text>
+</svg>

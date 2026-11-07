@@ -3,12 +3,11 @@
 
 # TailSteer
 
-<table align="center">
-  <tr>
-    <td align="center"><strong>A final stage</strong> after <strong>SFT, RL or OPD</strong> for multi-turn persistent editing</td>
-    <td align="center">→ <a href="https://arxiv.org/abs/2611.06741v1"><img src="https://img.shields.io/badge/arXiv-2611.06741-B31B1B?style=flat&amp;logo=arxiv&amp;logoColor=white&amp;labelColor=26323F" alt="arXiv · 2611.06741"></a></td>
-  </tr>
-</table>
+<p align="center">
+  <img src="website/assets/readme/training-stage.svg" alt="A final stage after SFT, RL or OPD for multi-turn persistent editing" align="middle">
+  &nbsp;→&nbsp;
+  <a href="https://arxiv.org/abs/2611.06741v1"><img src="https://img.shields.io/badge/arXiv-2611.06741-B31B1B?style=flat&amp;logo=arxiv&amp;logoColor=white&amp;labelColor=26323F" alt="arXiv · 2611.06741" align="middle"></a>
+</p>
 
 [![Retain the base models' original generative and editing capabilities. Unlock long-horizon preservation that rivals—or even surpasses—GPT-Image-2.5 Sunburst.](website/assets/readme/slogan.svg)](https://lyricccco.github.io/tailsteer/)
 
