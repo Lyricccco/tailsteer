@@ -12,6 +12,10 @@
 
 ### [See TailSteer in action ↗](https://lyricccco.github.io/tailsteer/)
 
+[![Try the live demo — FLUX.2 TailSteer](https://img.shields.io/badge/Try_the_live_demo-FLUX.2_TailSteer-692568?style=for-the-badge&logo=huggingface&logoColor=FFD21E)](https://huggingface.co/spaces/hugging-apps/flux2-klein-tailsteer)
+
+**Edit images in your browser — no local setup needed.**
+
 <table align="center">
   <tr>
     <td align="center"><strong>A final stage after SFT, RL or OPD for multi-turn persistent editing</strong></td>
@@ -93,6 +97,8 @@ The Ryze dance sequence above uses an ordinary subject image and pose guide at e
 *Successive objects are introduced into an atrium with SenseNova-U1.5-8B-MoT. [Qwen pose-guided editing](website/assets/readme/qwen/multi-input.gif).*
 
 ## Try TailSteer
+
+**Try it online:** [Open the FLUX.2 TailSteer demo](https://huggingface.co/spaces/hugging-apps/flux2-klein-tailsteer) — no local setup needed.
 
 From the repository root, set up the backbone environment and run a demo:
 

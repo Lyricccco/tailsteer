@@ -14,9 +14,19 @@ tags:
 
 # Qwen-Image-2.1 · TailSteer
 
+### Join the TailSteer Adventure! ✨
+
+Enjoying TailSteer? We'd love to see what you create! (≧▽≦)
+
+If you find it useful, please give us a ⭐ on [GitHub](https://github.com/Lyricccco/tailsteer) or an ⬆️ on [Hugging Face](https://huggingface.co/papers/2611.06741). Comments, feedback, and model requests are always welcome!
+
+With your support, we hope to release even more TailSteer-trained models in the future! **(ง •̀ᴗ•́)ง ♡**
+
+**Keep editing. Keep what matters.**
+
 ### Keep creating. Keep the details.
 
-**The generation and editing strengths of Qwen-Image-2.1, with greater stability across repeated edits.** TailSteer is a final training stage that largely retains the base model's learned capabilities while reducing the drift that builds up when each edit becomes the next input.
+**Preserve the generation and editing strengths of Qwen-Image-2.1. Unlock greater stability across repeated edits.** TailSteer is a final training stage that largely retains the base model's learned capabilities while reducing the drift that builds up when each edit becomes the next input.
 
 [Try the model](#use-your-existing-pipeline) · [Single-turn results](#keep-the-foundation-models-strengths) · [Add & Preserve](https://huggingface.co/datasets/Lyricccco/Add-and-Preserve) · [Training data](https://huggingface.co/datasets/Lyricccco/TailSteer-Source)
 

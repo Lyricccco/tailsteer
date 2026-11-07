@@ -14,13 +14,38 @@ tags:
 
 # FLUX.2 [klein] Base 9B · TailSteer
 
+<div align="center">
+
+[![Try the live demo — open in browser](https://img.shields.io/badge/Try_the_live_demo-Open_in_browser-692568?style=for-the-badge&logo=huggingface&logoColor=FFD21E)](https://huggingface.co/spaces/hugging-apps/flux2-klein-tailsteer)
+
+**Edit images in your browser — no local setup needed.**<br>
+Community demo by [hugging-apps](https://huggingface.co/hugging-apps).
+
+</div>
+
+### Join the TailSteer Adventure! ✨
+
+Enjoying TailSteer? We'd love to see what you create! (≧▽≦)
+
+If you find it useful, please give us a ⭐ on [GitHub](https://github.com/Lyricccco/tailsteer) or an ⬆️ on [Hugging Face](https://huggingface.co/papers/2611.06741). Comments, feedback, and model requests are always welcome!
+
+With your support, we hope to release even more TailSteer-trained models in the future! **(ง •̀ᴗ•́)ง ♡**
+
+**Keep editing. Keep what matters.**
+
 ### Keep creating. Keep the details.
 
-**The generation and editing strengths of FLUX.2 [klein] Base 9B, with greater stability across repeated edits.** TailSteer is a final training stage that largely retains the base model's learned capabilities while reducing the drift that builds up when each edit becomes the next input.
+**Preserve the generation and editing strengths of FLUX.2 [klein] Base 9B. Unlock greater stability across repeated edits.** TailSteer is a final training stage that largely retains the base model's learned capabilities while reducing the drift that builds up when each edit becomes the next input.
 
 [Try the model](#use-your-existing-pipeline) · [Single-turn results](#keep-the-foundation-models-strengths) · [Add & Preserve](https://huggingface.co/datasets/Lyricccco/Add-and-Preserve) · [Training data](https://huggingface.co/datasets/Lyricccco/TailSteer-Source)
 
 **+6.11 dB PSNR · 44.7% lower LPIPS** outside the edit region at turn 10 on Add & Preserve.
+
+## Reference-guided editing, turn after turn
+
+![Multiple-reference editing with the original pipeline](../../website/assets/readme/flux2/multi-input.gif)
+
+A single character and a sequence of pose guides become twenty successive edits. TailSteer retains the subject and a cleaner background while following the changing pose. [View the final comparison](../../website/assets/readme/flux2/multi-input-last.jpg).
 
 ## A room evolves. The scene stays recognizable.
 
@@ -72,12 +97,6 @@ The same checkpoint supports text-to-image generation and single-turn editing. A
 | GEdit ZH ↑ | 7.42 | 7.39 |
 | RISE accuracy (%) ↑ | 14.17 | 13.61 |
 | ImgEdit ↑ | 4.20 | 4.19 |
-
-## Reference-guided editing, turn after turn
-
-![Multiple-reference editing with the original pipeline](../../website/assets/readme/flux2/multi-input.gif)
-
-A single character and a sequence of pose guides become twenty successive edits. TailSteer retains the subject and a cleaner background while following the changing pose. [View the final comparison](../../website/assets/readme/flux2/multi-input-last.jpg).
 
 ## Measure what stays unchanged
 
