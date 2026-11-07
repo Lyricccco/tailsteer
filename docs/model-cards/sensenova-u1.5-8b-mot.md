@@ -14,13 +14,11 @@ tags:
 
 ### Join the TailSteer Adventure! ✨
 
-Enjoying TailSteer? We'd love to see what you create! (≧▽≦)
+We'd love to see what you create with TailSteer! Share your results, ideas, or feedback with us—every little creation makes our day! (≧▽≦) ♡
 
-If you find it useful, please give us a ⭐ on [GitHub](https://github.com/Lyricccco/tailsteer) or an ⬆️ on [Hugging Face](https://huggingface.co/papers/2611.06741). Comments, feedback, and model requests are always welcome!
+And if you'd like to support our work, a ⭐ on [**GitHub**](https://github.com/Lyricccco/tailsteer) or a ❤️ on [**Hugging Face**](https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT-TailSteer) would mean a lot to us!
 
 With your support, we hope to release even more TailSteer-trained models in the future! **(ง •̀ᴗ•́)ง ♡**
-
-**Keep editing. Keep what matters.**
 
 ### Keep creating. Keep the details.
 

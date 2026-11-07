@@ -10,11 +10,7 @@
 
 <sup>1</sup> MMLab, CUHK &nbsp; <sup>2</sup> SenseTime Research &nbsp; <sup>3</sup> Shanghai Artificial Intelligence Laboratory
 
-### [See TailSteer in action ↗](https://lyricccco.github.io/tailsteer/)
-
-[![Try the live demo — FLUX.2 TailSteer](https://img.shields.io/badge/Try_the_live_demo-FLUX.2_TailSteer-692568?style=for-the-badge&logo=huggingface&logoColor=FFD21E)](https://huggingface.co/spaces/hugging-apps/flux2-klein-tailsteer)
-
-**Edit images in your browser — no local setup needed.**
+### [Click to learn why TailSteer works and explore more visual comparisons ↗](https://lyricccco.github.io/tailsteer/)
 
 <table align="center">
   <tr>
@@ -24,21 +20,21 @@
 
 [![Retain the base models' original generative and editing capabilities. Unlock long-horizon preservation that rivals—or even surpasses—GPT-Image-2.5 Sunburst.](website/assets/readme/slogan.svg)](https://lyricccco.github.io/tailsteer/)
 
-**Try the released TailSteer models**
+[![Live demo · FLUX.2](https://img.shields.io/badge/Live_demo-FLUX.2-692568?style=flat&logo=huggingface&logoColor=FFD21E&labelColor=26323F)](https://huggingface.co/spaces/hugging-apps/flux2-klein-tailsteer)
+[![arXiv · 2611.06741](https://img.shields.io/badge/arXiv-2611.06741-B31B1B?style=flat&logo=arxiv&logoColor=white&labelColor=26323F)](https://arxiv.org/abs/2611.06741v1)
 
-[![FLUX.2 [klein] Base 9B · TailSteer](https://img.shields.io/badge/FLUX.2_%5Bklein%5D_Base_9B-TailSteer-692568?logo=huggingface&logoColor=FFD21E&labelColor=26323F)](https://huggingface.co/Lyricccco/FLUX.2-klein-base-9B-TailSteer)
-[![SenseNova-U1.5-8B-MoT · TailSteer](https://img.shields.io/badge/SenseNova--U1.5--8B--MoT-TailSteer-692568?logo=huggingface&logoColor=FFD21E&labelColor=26323F)](https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT-TailSteer)
-[![Qwen-Image-2.1 · TailSteer](https://img.shields.io/badge/Qwen--Image--2.1-TailSteer-692568?logo=huggingface&logoColor=FFD21E&labelColor=26323F)](https://huggingface.co/Lyricccco/Qwen-Image-2.1-TailSteer)
+[![FLUX.2 [klein] Base 9B · TailSteer](https://img.shields.io/badge/FLUX.2_%5Bklein%5D_Base_9B-TailSteer-692568?style=flat&logo=huggingface&logoColor=FFD21E&labelColor=26323F)](https://huggingface.co/Lyricccco/FLUX.2-klein-base-9B-TailSteer)
+[![SenseNova-U1.5-8B-MoT · TailSteer](https://img.shields.io/badge/SenseNova--U1.5--8B--MoT-TailSteer-692568?style=flat&logo=huggingface&logoColor=FFD21E&labelColor=26323F)](https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT-TailSteer)
+[![Qwen-Image-2.1 · TailSteer](https://img.shields.io/badge/Qwen--Image--2.1-TailSteer-692568?style=flat&logo=huggingface&logoColor=FFD21E&labelColor=26323F)](https://huggingface.co/Lyricccco/Qwen-Image-2.1-TailSteer)
 
-[![arXiv · 2611.06741](https://img.shields.io/badge/arXiv-2611.06741-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2611.06741v1)
-[![Hugging Face dataset · Source data](https://img.shields.io/badge/Dataset-Source_data-345D91?logo=huggingface&logoColor=FFD21E&labelColor=26323F)](https://huggingface.co/datasets/Lyricccco/TailSteer-Source)
-[![Hugging Face dataset · Add & Preserve Bench](https://img.shields.io/badge/Dataset-Add_%26_Preserve_Bench-345D91?logo=huggingface&logoColor=FFD21E&labelColor=26323F)](https://huggingface.co/datasets/Lyricccco/Add-and-Preserve)
-
-[Models](#choose-your-backbone) · [Try it](#try-tailsteer) · [Reproduce](#from-source-images-to-your-own-tailsteer-model)
+[![Hugging Face dataset · Source data](https://img.shields.io/badge/Dataset-Source_data-345D91?style=flat&logo=huggingface&logoColor=FFD21E&labelColor=26323F)](https://huggingface.co/datasets/Lyricccco/TailSteer-Source)
+[![Hugging Face dataset · Add & Preserve Bench](https://img.shields.io/badge/Dataset-Add_%26_Preserve_Bench-345D91?style=flat&logo=huggingface&logoColor=FFD21E&labelColor=26323F)](https://huggingface.co/datasets/Lyricccco/Add-and-Preserve)
 
 </div>
 
 A strong image editor should stay strong after the first edit. **TailSteer strengthens multi-turn stability while largely retaining a foundation model's text-to-image and editing capabilities.** It is a final training stage, followed by ordinary inference with the original architecture and sampling pipeline.
+
+Train your own TailSteer model: follow our **[step-by-step training guide](#from-source-images-to-your-own-tailsteer-model)**, from source data and trajectory caching to training and evaluation.
 
 ![Twenty skeleton-guided Ryze dance edits with FLUX.2](website/assets/readme/flux2/multi-input.gif)
 
@@ -97,8 +93,6 @@ The Ryze dance sequence above uses an ordinary subject image and pose guide at e
 *Successive objects are introduced into an atrium with SenseNova-U1.5-8B-MoT. [Qwen pose-guided editing](website/assets/readme/qwen/multi-input.gif).*
 
 ## Try TailSteer
-
-**Try it online:** [Open the FLUX.2 TailSteer demo](https://huggingface.co/spaces/hugging-apps/flux2-klein-tailsteer) — no local setup needed.
 
 From the repository root, set up the backbone environment and run a demo:
 
