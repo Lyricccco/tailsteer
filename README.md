@@ -3,29 +3,29 @@
 
 # TailSteer
 
-**Trajectory-Tail Steering for Drift-Resistant Multi-turn Image Editing**
-
-[Ruikang Li](https://lyricccco.github.io/)<sup>1</sup> · [Zixuan Chen](https://cecret3350.github.io/)<sup>1</sup> · [Jiarui Wu](https://gnwekge78707.github.io/)<sup>1</sup> · [Mingde Yao](https://mdyao.github.io/)<sup>1</sup> · [Yiyuan Zhang](https://invictus717.github.io/)<sup>1</sup><br>
-[Yujin Wang](https://openreview.net/profile?id=~Yujin_Wang2)<sup>3</sup> · [Hanming Deng](https://scholar.google.com/citations?user=NSeqMYIAAAAJ&hl=zh-CN)<sup>2</sup> · [Lewei Lu](https://scholar.google.com/citations?user=zdgKJXIAAAAJ&hl=zh-CN)<sup>2</sup> · [Tianfan Xue](https://tianfan.info/)<sup>1</sup>
-
-<sup>1</sup> MMLab, CUHK &nbsp; <sup>2</sup> SenseTime Research &nbsp; <sup>3</sup> Shanghai Artificial Intelligence Laboratory
-
-### [Click to learn why TailSteer works and explore more visual comparisons ↗](https://lyricccco.github.io/tailsteer/)
-
 <table align="center">
   <tr>
-    <td align="center"><strong>A final stage after SFT, RL or OPD for multi-turn persistent editing</strong></td>
+    <td align="center">
+      <strong>A final stage after SFT, RL or OPD for multi-turn persistent editing</strong>
+      &nbsp;→&nbsp;
+      <a href="https://arxiv.org/abs/2611.06741v1"><img src="https://img.shields.io/badge/arXiv-2611.06741-B31B1B?style=flat&amp;logo=arxiv&amp;logoColor=white&amp;labelColor=26323F" alt="arXiv · 2611.06741"></a>
+    </td>
   </tr>
 </table>
 
 [![Retain the base models' original generative and editing capabilities. Unlock long-horizon preservation that rivals—or even surpasses—GPT-Image-2.5 Sunburst.](website/assets/readme/slogan.svg)](https://lyricccco.github.io/tailsteer/)
 
-[![Live demo · FLUX.2](https://img.shields.io/badge/Live_demo-FLUX.2-692568?style=flat&logo=huggingface&logoColor=FFD21E&labelColor=26323F)](https://huggingface.co/spaces/hugging-apps/flux2-klein-tailsteer)
-[![arXiv · 2611.06741](https://img.shields.io/badge/arXiv-2611.06741-B31B1B?style=flat&logo=arxiv&logoColor=white&labelColor=26323F)](https://arxiv.org/abs/2611.06741v1)
+### [Click to learn why TailSteer works and explore more visual comparisons ↗](https://lyricccco.github.io/tailsteer/)
+
+**Try the released TailSteer models**
 
 [![FLUX.2 [klein] Base 9B · TailSteer](https://img.shields.io/badge/FLUX.2_%5Bklein%5D_Base_9B-TailSteer-692568?style=flat&logo=huggingface&logoColor=FFD21E&labelColor=26323F)](https://huggingface.co/Lyricccco/FLUX.2-klein-base-9B-TailSteer)
 [![SenseNova-U1.5-8B-MoT · TailSteer](https://img.shields.io/badge/SenseNova--U1.5--8B--MoT-TailSteer-692568?style=flat&logo=huggingface&logoColor=FFD21E&labelColor=26323F)](https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT-TailSteer)
 [![Qwen-Image-2.1 · TailSteer](https://img.shields.io/badge/Qwen--Image--2.1-TailSteer-692568?style=flat&logo=huggingface&logoColor=FFD21E&labelColor=26323F)](https://huggingface.co/Lyricccco/Qwen-Image-2.1-TailSteer)
+
+**Try the live demo in your browser — no local setup needed.**
+
+[![Live demo · FLUX.2](https://img.shields.io/badge/Live_demo-FLUX.2-692568?style=flat&logo=huggingface&logoColor=FFD21E&labelColor=26323F)](https://huggingface.co/spaces/hugging-apps/flux2-klein-tailsteer)
 
 [![Hugging Face dataset · Source data](https://img.shields.io/badge/Dataset-Source_data-345D91?style=flat&logo=huggingface&logoColor=FFD21E&labelColor=26323F)](https://huggingface.co/datasets/Lyricccco/TailSteer-Source)
 [![Hugging Face dataset · Add & Preserve Bench](https://img.shields.io/badge/Dataset-Add_%26_Preserve_Bench-345D91?style=flat&logo=huggingface&logoColor=FFD21E&labelColor=26323F)](https://huggingface.co/datasets/Lyricccco/Add-and-Preserve)
