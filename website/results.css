@@ -40,6 +40,13 @@
   letter-spacing: 0;
   font-weight: 400;
 }
+#results-title,
+#motivation-title,
+#training-title {
+  font-family: Inter, sans-serif;
+  font-size: calc(var(--results-heading-size) - 8px);
+  font-weight: 700;
+}
 #motivation-title,
 #training-title {
   grid-column: 1 / -1;
@@ -1317,15 +1324,19 @@ body.comparison-open {
 .results:not([data-view="visuals"]) .results-model-switch {
   visibility: hidden;
 }
-.result-comparison-dialog .result-card[data-kind="t2i"] .result-prompt {
+.result-comparison-dialog .result-prompt {
   display: block;
+  flex: none;
   max-width: 1050px;
   margin: 18px auto 0;
-  white-space: pre-line;
+  white-space: pre-wrap;
+  overflow: visible;
+  overflow-wrap: anywhere;
+  text-overflow: clip;
   line-height: 1.6;
   color: #677c96;
 }
-.result-comparison-dialog .result-card[data-kind="t2i"] .result-prompt::before {
+.result-comparison-dialog .result-prompt::before {
   content: attr(data-label);
   display: block;
   margin-bottom: 5px;
@@ -1442,7 +1453,7 @@ body.comparison-open {
     .comparison-image {
     height: min(50vw, 26svh);
   }
-  .result-comparison-dialog .result-card[data-kind="t2i"] .result-prompt {
+  .result-comparison-dialog .result-prompt {
     font-size: 11px;
   }
 }

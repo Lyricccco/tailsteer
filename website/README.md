@@ -18,6 +18,7 @@ See [GitHub's publishing-source instructions](https://docs.github.com/en/pages/g
 ## Files and shared assets
 
 - `index.html`, `styles.css`, `app.js`: page layout and trajectory animations.
+- `drift.js`, `drift.css`: interactive prediction-error and exposure-bias explainer.
 - `results.js`, `results.css`, `image-loader.js`: comparisons and prioritized image loading.
 - `assets/`: fonts, icons, measured curves and displayed image sequences.
 - `assets/readme/`: documentation figures and example manifests. Images already

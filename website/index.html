@@ -22,11 +22,13 @@
       type="font/ttf"
       crossorigin
     />
-    <link rel="stylesheet" href="styles.css?v=0f82e47680a8" />
-    <link rel="stylesheet" href="results.css?v=b76f275592b5" />
+    <link rel="stylesheet" href="styles.css?v=30e12a95b97a" />
+    <link rel="stylesheet" href="results.css?v=558bba941be3" />
+    <link rel="stylesheet" href="drift.css?v=20ce9646921b" />
     <script src="image-loader.js?v=e009925fe972" defer></script>
-    <script src="results.js?v=a319d84eb88c" defer></script>
-    <script src="app.js?v=1eb166aa8bd0" defer></script>
+    <script src="results.js?v=7f38d5a92ff7" defer></script>
+    <script src="drift.js?v=f81e0646d7a0" defer></script>
+    <script src="app.js?v=5bc64600517d" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -796,6 +798,7 @@
         </div>
       </section>
 
+
       <section
         id="motivation"
         class="chapter motivation"
@@ -816,33 +819,21 @@
         </div>
         <div class="motivation-toolbar">
           <div class="scene-tabs" role="tablist" aria-label="Motivation scenes">
-            <button
-              id="tab-frequency"
-              class="selected"
-              role="tab"
-              aria-selected="true"
-              aria-controls="scene-frequency"
-              data-scene="0"
-            >
-              <span>01</span> Why the tail?</button
-            ><button
-              id="tab-curation"
-              role="tab"
-              aria-selected="false"
-              aria-controls="scene-curation"
-              tabindex="-1"
-              data-scene="1"
-            >
-              <span>02</span> Where’s the target?</button
-            ><button
-              id="tab-terminal"
-              role="tab"
-              aria-selected="false"
-              aria-controls="scene-terminal"
-              tabindex="-1"
-              data-scene="2"
-            >
-              <span>03</span> Why more than one-last step correction?
+            <button id="tab-drift" class="selected" role="tab"
+              aria-selected="true" aria-controls="scene-drift" tabindex="0" data-scene="0">
+              <span>01</span> Why the multi-turn drift?
+            </button>
+            <button id="tab-frequency" role="tab"
+              aria-selected="false" aria-controls="scene-frequency" tabindex="-1" data-scene="1">
+              <span>02</span> Why the tail?
+            </button>
+            <button id="tab-curation" role="tab"
+              aria-selected="false" aria-controls="scene-curation" tabindex="-1" data-scene="2">
+              <span>03</span> Where’s the target?
+            </button>
+            <button id="tab-terminal" role="tab"
+              aria-selected="false" aria-controls="scene-terminal" tabindex="-1" data-scene="3">
+              <span>04</span> Why more than one-last step correction?
             </button>
           </div>
           <button
@@ -855,9 +846,84 @@
           </button>
         </div>
         <div class="motivation-stage">
+          <article id="scene-drift" class="scene drift active" role="tabpanel" aria-labelledby="tab-drift">
+            <header class="scene-header drift-heading">
+              <h3 id="drift-title">
+                <span>Small prediction errors. A changing input distribution.</span>
+                <span>Each new edit inherits what the last one left behind.</span>
+              </h3>
+            </header>
+            <div class="drift-phases" role="group" aria-label="Drift explanation stages">
+              <button type="button" data-drift-phase="0" aria-pressed="true">
+                <span>01</span> Prediction error
+              </button>
+              <button type="button" data-drift-phase="1" aria-pressed="false">
+                <span>02</span> Exposure bias
+              </button>
+              <button type="button" data-drift-phase="2" aria-pressed="false">
+                <span>03</span> Across turns
+              </button>
+            </div>
+            <div class="drift-viewport" tabindex="0" aria-label="Animated flow diagram; scroll horizontally on small screens">
+              <svg class="drift-canvas" viewBox="0 0 1120 480" role="img" aria-labelledby="drift-diagram-title drift-diagram-description">
+                <title id="drift-diagram-title">How sampling errors can become multi-turn drift</title>
+                <desc id="drift-diagram-description">
+                  First, a purple model rollout departs from a gray reference flow as
+                  imperfect velocity predictions change subsequent states. Second,
+                  noisy training interpolations are contrasted with states generated
+                  by the model at inference. These distributions can differ when the
+                  learned flow is imperfect. Finally, three editing turns show each
+                  output becoming the next turn's source condition, while each turn
+                  samples fresh noise. Residual preservation errors can therefore
+                  carry across edits. This is a qualitative schematic, not measured
+                  coordinates or a claim that errors always increase at every step.
+                </desc>
+              </svg>
+            </div>
+            <p class="drift-swipe">Swipe to explore the diagram ↔</p>
+            <div class="drift-caption">
+              <div aria-live="polite" aria-atomic="true">
+                <h4 id="drift-caption-title">One imperfect update changes the next state.</h4>
+                <p id="drift-caption-body">Prediction errors can propagate as every step uses the state reached by the previous one.</p>
+              </div>
+              <div id="drift-equation" class="drift-equation" aria-label="Illustrative update equation">
+                x<sub>k+1</sub> = x<sub>k</sub> + Δt · v<sub>θ</sub>(x<sub>k</sub>, t<sub>k</sub>, c)
+              </div>
+            </div>
+            <div class="drift-controls">
+              <input id="drift-seek" type="range" min="0" max="38" step="0.05" value="0" aria-label="Drift animation progress" />
+              <output id="drift-progress" class="drift-progress" aria-hidden="true">Denoising step 0 / 50</output>
+            </div>
+            <div class="drift-footer">
+              <details class="drift-notes">
+                <summary>About this schematic &amp; references</summary>
+                <p>
+                  Flow matching commonly learns velocities on noisy interpolations;
+                  inference integrates a learned field on its own evolving states.
+                  With imperfect predictions, the resulting state distribution can
+                  shift. This train–test gap can amplify error; it is not an
+                  unavoidable limitation of an exact flow.
+                  <a href="https://arxiv.org/abs/2210.02747" target="_blank" rel="noopener noreferrer">Flow Matching ↗</a>
+                  <a href="https://proceedings.mlr.press/v202/ning23a.html" target="_blank" rel="noopener noreferrer">Exposure bias in diffusion sampling ↗</a>
+                </p>
+                <p>
+                  Paths and distances are illustrative, not measurements. The reference
+                  denotes an idealized flow under the same conditioning, not a unique
+                  image dictated by the prompt. Error need not grow at every step:
+                  our <button type="button" class="drift-inline-link" data-drift-next>measured trajectory analysis</button> shows
+                  preservation error decreasing yet remaining nonzero at the endpoint.
+                  Near the tail, fine details are finalized and fewer updates remain
+                  to correct residual errors. Standard pretraining alone does not
+                  explicitly correct every state visited by its own sampler.
+                </p>
+              </details>
+              <button class="drift-next" type="button" data-drift-next>So, why steer the tail? ↗</button>
+            </div>
+          </article>
           <article
             id="scene-frequency"
-            class="scene active"
+            class="scene"
+            hidden
             role="tabpanel"
             aria-labelledby="tab-frequency"
           >
@@ -1391,9 +1457,9 @@
                 type="button"
                 class="terminal-target-link"
                 id="terminal-target-link"
-                aria-label="Revisit how the preservation-aware training target is constructed in scene 02"
+                aria-label="Revisit how the preservation-aware training target is constructed in scene 03"
               >
-                <span class="eyebrow">FROM 02 · OUR TRAINING TARGET ↖</span>
+                <span class="eyebrow">FROM 03 · OUR TRAINING TARGET ↖</span>
                 <span class="terminal-target-equation">
                   <span>x<sub>target</sub> =</span>
                   <span
@@ -1412,7 +1478,7 @@
                 class="terminal-training-diagram"
                 viewBox="0 0 560 115"
                 role="img"
-                aria-label="Training: supervise only step 50, from the cached base state at step 49 toward the target constructed in scene 02. Earlier steps have no training objective."
+                aria-label="Training: supervise only step 50, from the cached base state at step 49 toward the target constructed in scene 03. Earlier steps have no training objective."
               >
                 <path
                   d="M22 58 C150 88 285 84 380 56 L520 24"
@@ -1648,7 +1714,7 @@
           </article>
         </div>
         <div class="carousel-bottom">
-          <span class="micro" id="scene-count">01 / 03</span>
+          <span class="micro" id="scene-count">01 / 04</span>
           <div class="carousel-progress">
             <span id="carousel-progress"></span>
           </div>

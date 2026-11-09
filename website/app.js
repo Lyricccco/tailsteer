@@ -582,7 +582,11 @@
     sceneTime = 0,
     carouselPaused = false,
     frequencyManual = null;
-  const durations = [18, 16, 22];
+  let motivationInView = false;
+  new IntersectionObserver(([entry]) => {
+    motivationInView = entry.isIntersecting && entry.intersectionRatio >= 0.2;
+  }, { threshold: 0.2 }).observe($(".motivation-stage"));
+  const durations = [window.TailSteerDrift.duration + 3, 18, 16, 22];
   const panels = $$(".scene"),
     tabs = $$(".scene-tabs button");
   function carouselButton() {
@@ -596,7 +600,7 @@
   }
   function selectScene(index, focus = false) {
     clearCurationInspect();
-    scene = (index + 3) % 3;
+    scene = (index + panels.length) % panels.length;
     sceneTime = 0;
     frequencyManual = null;
     panels.forEach((p, i) => {
@@ -608,10 +612,11 @@
       t.setAttribute("aria-selected", String(i === scene));
       t.tabIndex = i === scene ? 0 : -1;
     });
-    $("#scene-count").textContent = `0${scene + 1} / 03`;
+    $("#scene-count").textContent = `0${scene + 1} / 0${panels.length}`;
     if (focus) tabs[scene].focus();
-    if (scene === 1) curationGeometry = null;
-    renderScene(paused || carouselPaused ? durations[scene] * 0.85 : 0);
+    if (scene === 2) curationGeometry = null;
+    sceneTime = paused || carouselPaused ? durations[scene] * 0.85 : 0;
+    renderScene(sceneTime);
   }
   tabs.forEach((t, i) => t.addEventListener("click", () => selectScene(i)));
   $(".scene-tabs").addEventListener("keydown", (e) => {
@@ -623,7 +628,7 @@
         e.key === "Home"
           ? 0
           : e.key === "End"
-            ? 2
+            ? panels.length - 1
             : scene + (e.key === "ArrowRight" ? 1 : -1),
         true,
       );
@@ -641,11 +646,24 @@
     frequencyManual = null;
     carouselButton();
   });
+  $("#scene-drift").addEventListener("driftseek", ({ detail }) => {
+    sceneTime = detail.time;
+    carouselPaused = !detail.play || reduced.matches;
+    if (detail.play && !reduced.matches) {
+      paused = false;
+      updateMotionState();
+    }
+    carouselButton();
+    renderScene(sceneTime);
+  });
+  $$("[data-drift-next]").forEach((button) =>
+    button.addEventListener("click", () => selectScene(1, true)),
+  );
   let swipeX = null;
   $(".motivation-stage").addEventListener(
     "touchstart",
     (e) => {
-      if (!e.target.closest("input,button")) swipeX = e.touches[0].clientX;
+      swipeX = e.target.closest("input,button,.drift-viewport") ? null : e.touches[0].clientX;
     },
     { passive: true },
   );
@@ -661,17 +679,18 @@
     { passive: true },
   );
   function renderScene(t) {
+    if (scene === 0) window.TailSteerDrift.render(t);
     $("#carousel-progress").style.width =
       `${clamp(t / durations[scene]) * 100}%`;
-    if (scene === 0)
+    if (scene === 1)
       renderFrequency(
         frequencyManual === null
           ? (frequencyFrames[0]?.step ?? 0) +
               (50 - (frequencyFrames[0]?.step ?? 0)) * smooth(clamp(t / 13))
           : frequencyManual,
       );
-    if (scene === 1) renderCuration(t);
-    if (scene === 2) renderTerminal(t);
+    if (scene === 2) renderCuration(t);
+    if (scene === 3) renderTerminal(t);
   }
 
   // Measured frequency data, with actual cached trajectory images.
@@ -1103,7 +1122,7 @@
     curationGeometry = null;
     compositeReady = true;
     curationFlow.dataset.ready = "true";
-    if (scene === 1) renderCuration(paused || carouselPaused ? 15 : sceneTime);
+    if (scene === 2) renderCuration(paused || carouselPaused ? 15 : sceneTime);
   }
   let compositePreparing = false;
   new IntersectionObserver(
@@ -1293,7 +1312,7 @@
   }
   new ResizeObserver(() => {
     curationGeometry = null;
-    if (scene === 1) renderCuration(curationTime);
+    if (scene === 2) renderCuration(curationTime);
   }).observe(curationFlow);
 
   // Terminal-only experiment: images are taken directly from paper Figure 2.
@@ -1377,7 +1396,7 @@
       t < 3 ? "supervise" : t < 15 ? ["base", "switch", "all"][row] : "extend";
   }
   $("#terminal-target-link").addEventListener("click", () =>
-    selectScene(1, true),
+    selectScene(2, true),
   );
   $("#terminal-replay").addEventListener("click", () => {
     sceneTime = 0;
@@ -1927,11 +1946,11 @@
         animateHero(heroTime);
       }
       if (
-        activeChapter === "motivation" &&
+        motivationInView &&
         !carouselPaused &&
         !curationInspect
       ) {
-        if ((scene !== 0 || frequencyReady) && (scene !== 1 || compositeReady))
+        if ((scene !== 1 || frequencyReady) && (scene !== 2 || compositeReady))
           sceneTime += dt;
         if (sceneTime > durations[scene]) selectScene(scene + 1);
         renderScene(sceneTime);

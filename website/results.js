@@ -143,6 +143,10 @@
         state.index
       ] || "";
     state.prompt.title = state.data.prompts[state.index] || "";
+    if (state.expanded)
+      state.prompt.dataset.label =
+        state.data.promptLabel ||
+        (state.data.kind === "t2i" ? "Prompt" : `Prompt · Turn ${turn}`);
     state.range.setAttribute(
       "aria-valuetext",
       `Turn ${turn} of ${state.data.turns.at(-1)}`,
@@ -373,11 +377,9 @@
     controls.append(state.range, state.output);
     if (data.turns.length > 1) element.append(controls);
     state.prompt = make("p", "result-prompt");
-    if (data.kind === "t2i")
-      state.prompt.dataset.label = data.promptLabel || "Prompt";
     if (data.kind === "single" && !expanded)
       element.insertBefore(state.prompt, controls);
-    if (expanded && data.kind === "t2i") element.append(state.prompt);
+    if (expanded && data.prompts?.some(Boolean)) element.append(state.prompt);
     updatePlayback(state);
     updateTurnLabel(state);
     if (!expanded) cardObserver.observe(element);

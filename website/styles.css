@@ -1018,8 +1018,8 @@ main {
   margin-bottom: 24px;
 }
 .scene-header h3 {
-  font-family: TailHand, Inter, sans-serif;
-  font-size: 27px;
+  font-family: Inter, sans-serif;
+  font-size: 12px;
   line-height: 1.35;
   font-weight: 400;
   letter-spacing: 0;
@@ -2242,7 +2242,7 @@ footer > span {
     min-height: 610px;
   }
   .scene-header h3 {
-    font-size: 33px;
+    font-size: 18px;
   }
   .scene-header p {
     font-size: 14px;
@@ -2289,7 +2289,7 @@ footer > span {
     padding: 25px 23px 18px;
   }
   .scene-header h3 {
-    font-size: 24px;
+    font-size: 9px;
   }
   .scene-header p {
     font-size: 11px;
@@ -2459,7 +2459,7 @@ footer > span {
     min-height: 550px;
   }
   .scene-header h3 {
-    font-size: 26px;
+    font-size: 11px;
   }
   .training-steps button span {
     font-size: 10px;
@@ -2629,7 +2629,7 @@ footer > span {
     grid-template-columns: 1fr;
   }
   .scene-header h3 {
-    font-size: 26px;
+    font-size: 11px;
   }
   .scene-header p {
     font-size: 11px;
